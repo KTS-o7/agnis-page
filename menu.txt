@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Menu | Agni’s Fish Chicken Fries</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&amp;family=Be+Vietnam+Pro:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-container": "#480d00",
+              "surface-container-high": "#20201f",
+              "inverse-surface": "#fcf9f8",
+              "error": "#ff716c",
+              "on-tertiary-fixed-variant": "#7a000b",
+              "inverse-primary": "#b22e00",
+              "error-container": "#9f0519",
+              "inverse-on-surface": "#565555",
+              "error-dim": "#d7383b",
+              "secondary-fixed": "#ffc96f",
+              "surface-bright": "#2c2c2c",
+              "secondary-fixed-dim": "#ffb623",
+              "surface-container": "#1a1a1a",
+              "on-primary": "#5c1300",
+              "primary-fixed-dim": "#ff5d2e",
+              "on-secondary-fixed-variant": "#6c4a00",
+              "primary": "#ff8f70",
+              "on-secondary": "#523700",
+              "surface-container-low": "#131313",
+              "on-secondary-fixed": "#483000",
+              "surface-container-lowest": "#000000",
+              "tertiary-fixed": "#ff9289",
+              "secondary-dim": "#eda600",
+              "on-tertiary-container": "#1f0001",
+              "on-error-container": "#ffa8a3",
+              "on-surface": "#ffffff",
+              "on-tertiary": "#4a0004",
+              "surface-container-highest": "#262626",
+              "on-tertiary-fixed": "#3a0002",
+              "tertiary-fixed-dim": "#ff7b71",
+              "primary-container": "#ff7852",
+              "surface-dim": "#0e0e0e",
+              "secondary-container": "#7e5700",
+              "tertiary": "#ff7168",
+              "on-surface-variant": "#adaaaa",
+              "on-background": "#ffffff",
+              "background": "#0e0e0e",
+              "outline": "#767575",
+              "on-primary-fixed-variant": "#581200",
+              "tertiary-dim": "#ff7168",
+              "surface-variant": "#262626",
+              "on-secondary-container": "#fff6ee",
+              "surface": "#0e0e0e",
+              "on-primary-fixed": "#000000",
+              "secondary": "#feb300",
+              "primary-fixed": "#ff7852",
+              "primary-dim": "#ff734c",
+              "tertiary-container": "#fe4e49",
+              "on-error": "#490006",
+              "outline-variant": "#484847",
+              "surface-tint": "#ff8f70"
+            },
+            fontFamily: {
+              "headline": ["Epilogue"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .spice-glow {
+        text-shadow: 0 0 10px rgba(255, 113, 104, 0.6);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full flex justify-between items-center px-6 py-4 z-50 bg-[#0e0e0e]/70 backdrop-blur-xl">
+<div class="text-2xl font-black text-[#ff8f70] uppercase tracking-tighter font-headline">Agni’s</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-['Epilogue'] font-black tracking-tight text-[#adaaaa] hover:text-white transition-colors" href="#">Home</a>
+<a class="font-['Epilogue'] font-black tracking-tight text-[#feb300] font-bold border-b-2 border-[#feb300] pb-1" href="#">Menu</a>
+<a class="font-['Epilogue'] font-black tracking-tight text-[#adaaaa] hover:text-white transition-colors" href="#">Location</a>
+<a class="font-['Epilogue'] font-black tracking-tight text-[#adaaaa] hover:text-white transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="material-symbols-outlined text-white p-2 hover:bg-surface-container-highest rounded-full transition-all">search</button>
+<button class="bg-primary text-on-primary-fixed font-bold px-4 py-2 rounded-md hover:bg-primary-fixed-dim transition-transform active:scale-95">ORDER NOW</button>
+</div>
+</nav>
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto">
+<!-- Hero Section: Featured Combo -->
+<section class="mb-20">
+<div class="relative w-full h-[500px] overflow-hidden rounded-xl bg-surface-container-highest group">
+<img alt="Featured Combo" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" data-alt="Close up of a gourmet fried chicken and fish combo platter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbL7mdYOoJrfmr-4WI_TVLC8J6-6GnD3O-KF7cZUhiqfk2WQLT7jC95YatB8TdLBJJGAzIYA3sRq0g0UP4RmqhuICpsNoIsrlD9yuT9b5X3LemRsJflidoDzR4gsCpvtqUxHdaCv6GvGg6hWIEplLdho4r7Iucn8uhu0Sl5elQt8ajVImWJrdkkZWZ7SZYvJdki-odFpQ2Mi-ah7QpHWhUxEIoLxFCb7YhEcXB1zx60o_BpoAAGtYb3_TNEo6vOytSHJB0HwkmlDNL"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent"></div>
+<div class="relative h-full flex flex-col justify-center px-12 max-w-2xl">
+<span class="inline-block bg-secondary text-on-secondary-fixed text-xs font-black uppercase tracking-[0.2em] px-3 py-1 mb-4 rounded-sm">Chef's Special</span>
+<h1 class="font-headline text-6xl font-black tracking-tighter mb-4 text-white leading-none">THE COASTAL<br/><span class="text-primary">EMBER FEAST</span></h1>
+<p class="text-on-surface-variant text-lg mb-8 font-light leading-relaxed">Two pieces of crispy fire-grilled sea bass, four signature spicy wings, hand-cut cajun fries, and our house-made lemon-garlic aioli.</p>
+<div class="flex items-center space-x-6">
+<button class="bg-primary text-on-primary-fixed font-black px-8 py-4 rounded-md text-lg tracking-tight hover:bg-primary-fixed-dim transition-all shadow-lg shadow-primary/10">CLAIM FOR $24.99</button>
+<div class="flex items-center space-x-1 text-tertiary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-black">EXTREME HEAT</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="flex flex-col md:flex-row gap-12">
+<!-- Sidebar Navigation -->
+<aside class="md:w-64 flex-shrink-0">
+<div class="sticky top-28 space-y-2">
+<h3 class="font-headline font-black text-xs uppercase tracking-[0.3em] text-outline mb-6 px-4">Categories</h3>
+<a class="group flex items-center justify-between px-4 py-4 rounded-md bg-surface-container-highest text-secondary border-l-4 border-secondary transition-all" href="#burgers">
+<span class="font-bold tracking-tight">BURGERS</span>
+<span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+</a>
+<a class="group flex items-center justify-between px-4 py-4 rounded-md hover:bg-surface-container-low text-on-surface-variant hover:text-white transition-all" href="#seafood">
+<span class="font-bold tracking-tight">SEAFOOD</span>
+<span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward_ios</span>
+</a>
+<a class="group flex items-center justify-between px-4 py-4 rounded-md hover:bg-surface-container-low text-on-surface-variant hover:text-white transition-all" href="#fries">
+<span class="font-bold tracking-tight">FRIES</span>
+<span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward_ios</span>
+</a>
+<a class="group flex items-center justify-between px-4 py-4 rounded-md hover:bg-surface-container-low text-on-surface-variant hover:text-white transition-all" href="#combos">
+<span class="font-bold tracking-tight">COMBOS</span>
+<span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward_ios</span>
+</a>
+</div>
+</aside>
+<!-- Food Grid -->
+<div class="flex-grow space-y-24">
+<!-- Category: Burgers -->
+<section id="burgers">
+<div class="flex items-baseline space-x-4 mb-10">
+<h2 class="font-headline text-4xl font-black tracking-tighter text-white">BURGERS</h2>
+<div class="h-[2px] flex-grow bg-gradient-to-r from-outline-variant/30 to-transparent"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Item 1 -->
+<div class="bg-surface-container-highest rounded-lg overflow-hidden group border border-outline-variant/10">
+<div class="h-64 overflow-hidden relative">
+<img alt="Agni Burger" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A thick juicy beef burger with melting cheese and spicy sauce" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBABeWQpNptaexXM6_7XmBOtuSjv06Tg0At9nyK5zxK9V84Cmokr6QQ4j4Yt14Up-7kGa8JJBHoz70tUrZ-ZKFxABDRQPmd0SMh8pGHT3KP6397k_3Pw6RhijA3gvfwkudxtV2C03EkF6Z3YhLPKIONqskh7itnYx35yu7v9XKPYakT-zC7AqWQnIjNRMd7ObS1q7FFkDjjCcuSiQbXuZOl8oyIgUpWaPTzgGhi6Geejg9N8gw-3O-b_rRi4KKpOgaBXyBn23_htmV6"/>
+<div class="absolute top-4 right-4 bg-surface-bright/60 backdrop-blur-md px-2 py-1 rounded-md flex space-x-1">
+<span class="material-symbols-outlined text-tertiary text-lg" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+<span class="material-symbols-outlined text-tertiary text-lg" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+<span class="material-symbols-outlined text-outline-variant/30 text-lg" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-headline text-xl font-black text-white">The Inferno Burger</h4>
+<span class="text-primary font-black">$14.50</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Double beef patty, ghost pepper jack, charred jalapeños, and our signature Agni lava sauce.</p>
+<button class="w-full py-3 bg-surface-container-low border border-outline-variant/20 rounded-md font-bold text-xs uppercase tracking-widest hover:bg-primary hover:text-on-primary-fixed transition-all">Add to Tray</button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-highest rounded-lg overflow-hidden group border border-outline-variant/10">
+<div class="h-64 overflow-hidden relative">
+<img alt="Chicken Burger" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Golden fried chicken breast burger with crisp lettuce" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnPVwWgjl7xhCOPY5pe7r9asTUFjP2i-Cmtv6ZI2Oq2uGazM3s3lm7qazNXGrdWdQNcOhT-grx6IYMKf9qqTXnzf1ArPBqumCwN6UhzuyucXUbP1GOsq9X68_EumEPvz8QhoBPa2KuaYZSbj7RytHxbysq2glBPVOBQpLBjiNJKp4Sy3KV_nF6wzonTxn8h9ItzT8Z60AQg3ha3CGmv0PTGb_00axPQuLLSGzwfGxDgCScRxFVAmio7BBjfGeb0WDlWWFXZfMUOwTS"/>
+<div class="absolute top-4 right-4 bg-surface-bright/60 backdrop-blur-md px-2 py-1 rounded-md flex space-x-1">
+<span class="material-symbols-outlined text-tertiary text-lg" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+<span class="material-symbols-outlined text-outline-variant/30 text-lg" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+<span class="material-symbols-outlined text-outline-variant/30 text-lg" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-headline text-xl font-black text-white">Citrus Fire Chicken</h4>
+<span class="text-primary font-black">$12.99</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Buttermilk fried chicken, lemon-zest slaw, and a mild peri-peri glaze on brioche.</p>
+<button class="w-full py-3 bg-surface-container-low border border-outline-variant/20 rounded-md font-bold text-xs uppercase tracking-widest hover:bg-primary hover:text-on-primary-fixed transition-all">Add to Tray</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Category: Seafood -->
+<section id="seafood">
+<div class="flex items-baseline space-x-4 mb-10">
+<h2 class="font-headline text-4xl font-black tracking-tighter text-white">SEAFOOD</h2>
+<div class="h-[2px] flex-grow bg-gradient-to-r from-outline-variant/30 to-transparent"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Item 3 -->
+<div class="bg-surface-container-highest rounded-lg overflow-hidden group border border-outline-variant/10">
+<div class="h-64 overflow-hidden relative">
+<img alt="Grilled Fish" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Flame grilled salmon fillet with coastal spices" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApSvyavmFhDLVRv-MS25djB999ASysFHQ0QLU0eyvYxKOKysZm7V8tp1Ca2BY9SuQmu5TchagK3zvV6Ny9F8-bxzV56IDToR9cc4a4z_x8B5YRf96JSyz-GbMdzjS4N1Ebf-1ksBhmzW3lJCl50gZD_PTV0z_GBZGuKMp04PqWp_bgeMZKJLuP8CBu6UncS1WRR0Aa6PeETFGIRkprwv0_Q6780y7Q1QEyQRJM630hGZC7Kdmwy_uZT8ePPloUdcTyRWmmxrwA6GdR"/>
+<div class="absolute top-4 right-4 bg-surface-bright/60 backdrop-blur-md px-2 py-1 rounded-md flex space-x-1">
+<span class="material-symbols-outlined text-tertiary text-lg" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+<span class="material-symbols-outlined text-tertiary text-lg" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+<span class="material-symbols-outlined text-tertiary text-lg" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-headline text-xl font-black text-white">Malabar Spiced Salmon</h4>
+<span class="text-primary font-black">$19.50</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Atlantic salmon rubbed with crushed peppercorns, turmeric, and coastal sea salt.</p>
+<button class="w-full py-3 bg-surface-container-low border border-outline-variant/20 rounded-md font-bold text-xs uppercase tracking-widest hover:bg-primary hover:text-on-primary-fixed transition-all">Add to Tray</button>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="bg-surface-container-highest rounded-lg overflow-hidden group border border-outline-variant/10">
+<div class="h-64 overflow-hidden relative">
+<img alt="Fried Shrimp" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Crispy breaded shrimp with a spicy dipping sauce" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6xQPMovx42y6S8BHRItajtz6oneN1QfG-vPg3P-p8ePdIkEFJd0y9NQ_bALnM6Rrshff4PT6S7u1XsnE_M_hiils7LpZ49oVEaFzUYOwa69AjSOoWhRMeKcXIJhQMs_W4JGez5-1QQVuUuCCA8y_TYCQCO7FOqaLzXdMvctEPDUdC3NnDAD1an_pwBUTjNlyW8uyiW5z5B906WimTv8pOrQa5yAT2rt3cIk7y9Gp5-co5V7oK1G9wy4wOqpzzGgWqZ5QPPtR_1rT1"/>
+<div class="absolute top-4 right-4 bg-surface-bright/60 backdrop-blur-md px-2 py-1 rounded-md flex space-x-1">
+<span class="material-symbols-outlined text-tertiary text-lg" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+<span class="material-symbols-outlined text-outline-variant/30 text-lg" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+<span class="material-symbols-outlined text-outline-variant/30 text-lg" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-headline text-xl font-black text-white">Dynamite Prawns</h4>
+<span class="text-primary font-black">$16.00</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Jumbo prawns battered and tossed in a creamy, sriracha-infused dynamite sauce.</p>
+<button class="w-full py-3 bg-surface-container-low border border-outline-variant/20 rounded-md font-bold text-xs uppercase tracking-widest hover:bg-primary hover:text-on-primary-fixed transition-all">Add to Tray</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Category: Fries -->
+<section id="fries">
+<div class="flex items-baseline space-x-4 mb-10">
+<h2 class="font-headline text-4xl font-black tracking-tighter text-white">FRIES</h2>
+<div class="h-[2px] flex-grow bg-gradient-to-r from-outline-variant/30 to-transparent"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Fries Item 1 -->
+<div class="bg-surface-container-highest rounded-lg overflow-hidden group border border-outline-variant/10 p-4">
+<div class="aspect-square rounded-md overflow-hidden mb-4">
+<img alt="Masala Fries" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Golden fries sprinkled with red masala spice" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7nVrHNA9TQ4sOAIjNwu_ohVPiN4wRMooo95EHYHOPRS5mh5-mG9gcbtctu1geRk6FWNLEdVbOVnaQA1cL7EVP6ykpmjENTvIc3w8JX44Ogl7vZnkRmqGx1TCu1rkfZjG3vBnV21W7zX_FXJU6F8f-YK0VPeQAR9vFv1KdqIUgiMeWhkWBY6mkm_xCCVAeOGCw7xT5hjs12sbnobdZo1gQJWf0Y7KCmkP5t_mThqNWaRFm5ctjpwpvJcGOwhFjVGpmGQ7F7FIel8l-"/>
+</div>
+<h4 class="font-headline text-lg font-black text-white mb-1">Masala Dust Fries</h4>
+<p class="text-on-surface-variant text-xs mb-4">Twice-fried with our secret blend of coastal spices.</p>
+<div class="flex justify-between items-center">
+<span class="text-secondary font-black">$5.50</span>
+<button class="material-symbols-outlined text-primary hover:bg-primary hover:text-on-primary-fixed p-2 rounded-md transition-all">add_shopping_cart</button>
+</div>
+</div>
+<!-- Fries Item 2 -->
+<div class="bg-surface-container-highest rounded-lg overflow-hidden group border border-outline-variant/10 p-4">
+<div class="aspect-square rounded-md overflow-hidden mb-4">
+<img alt="Truffle Fries" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="French fries with truffle oil and parmesan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy3Tfe0IL_89-Xhk0C9cz-iOWPYMNJYQ0XTVRyWubGmVBSXs0lFcktzzhEv_0uMpxT5T8UQg89UNEbKUhkfXOljby_fadfm4tH6Th89gECqjcQTnT_k7f9u7HDkQ7-YEvFqTNfpz60ej3wue7c04bbJvd0sWjrZu2SD_67VqEHeMthrreGbjOqaW4mPbGCNEFdvdPqqnZEynrScigdGeRZLy0OtOE-wgPsO5mVIXKanHoeZ3ooESGKjqqoab-LB4hkyFv0VWW-oB5T"/>
+</div>
+<h4 class="font-headline text-lg font-black text-white mb-1">Truffle Char</h4>
+<p class="text-on-surface-variant text-xs mb-4">Infused with black truffle oil and smoked sea salt.</p>
+<div class="flex justify-between items-center">
+<span class="text-secondary font-black">$7.99</span>
+<button class="material-symbols-outlined text-primary hover:bg-primary hover:text-on-primary-fixed p-2 rounded-md transition-all">add_shopping_cart</button>
+</div>
+</div>
+<!-- Fries Item 3 -->
+<div class="bg-surface-container-highest rounded-lg overflow-hidden group border border-outline-variant/10 p-4">
+<div class="aspect-square rounded-md overflow-hidden mb-4">
+<img alt="Lava Fries" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Loaded fries with melted cheese and spicy sauce" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBASnEdycwBSWMtg1V1-48WsKvGtFo_oPVOkjYdwXJnCAHxP7S29nBLRsmnJeozBm6svRBRQfGXFaQE2FVmM7PoSAItDqkeiWSWMNccvgX6LdIoX6f_LmqlxBceW-d_vA1K4JhlSdLUwKHXQR0tB8WkQC99fDoBUVBmINRraonBJX4N3dtHh8m-2_LBtnAGTtd4SsKXWQXd2EWkGXbs9AgqH4TpC-ucu0MePzmJiQmfwgdLggjbno1PN8uNj3R9XcaWbA13cgkKLiLR"/>
+</div>
+<h4 class="font-headline text-lg font-black text-white mb-1">Volcano Loaded</h4>
+<p class="text-on-surface-variant text-xs mb-4">Smothered in melted cheddar and Agni hot sauce.</p>
+<div class="flex justify-between items-center">
+<span class="text-secondary font-black">$8.50</span>
+<button class="material-symbols-outlined text-primary hover:bg-primary hover:text-on-primary-fixed p-2 rounded-md transition-all">add_shopping_cart</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Floating WhatsApp CTA -->
+<a class="fixed bottom-10 right-10 z-[60] flex items-center space-x-3 bg-secondary text-on-secondary-fixed px-6 py-4 rounded-full shadow-2xl shadow-secondary/20 hover:scale-105 active:scale-95 transition-all group" href="https://wa.me/yournumber">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span class="font-bold tracking-tight uppercase text-sm">Order on WhatsApp</span>
+</a>
+<!-- Footer -->
+<footer class="w-full flex flex-col items-center text-center space-y-8 bg-[#0e0e0e] py-12 px-6 border-t border-[#484847]/15">
+<div class="text-xl font-black text-[#ff8f70] mb-4 uppercase tracking-tighter font-headline">Agni’s</div>
+<div class="flex flex-wrap justify-center gap-8 mb-4">
+<a class="font-['Be_Vietnam_Pro'] text-sm text-[#adaaaa] hover:text-[#ff8f70] transition-colors" href="#">Privacy Policy</a>
+<a class="font-['Be_Vietnam_Pro'] text-sm text-[#adaaaa] hover:text-[#ff8f70] transition-colors" href="#">Terms of Service</a>
+<a class="font-['Be_Vietnam_Pro'] text-sm text-[#adaaaa] hover:text-[#ff8f70] transition-colors" href="#">Location</a>
+<a class="font-['Be_Vietnam_Pro'] text-sm text-[#adaaaa] hover:text-[#ff8f70] transition-colors" href="#">Contact</a>
+</div>
+<p class="font-['Be_Vietnam_Pro'] text-sm text-[#adaaaa]">© 2024 Agni’s Fish Chicken Fries. Embers of the Coast.</p>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-[#1a1a1a]/80 backdrop-blur-2xl rounded-t-2xl shadow-[0_-4px_20px_rgba(255,115,76,0.05)]">
+<a class="flex flex-col items-center justify-center text-[#adaaaa] px-4 py-2 hover:text-[#ff8f70] transition-colors" href="#">
+<span class="material-symbols-outlined">chat</span>
+<span class="font-['Be_Vietnam_Pro'] text-[10px] font-bold uppercase tracking-widest mt-1">WhatsApp</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#adaaaa] px-4 py-2 hover:text-[#ff8f70] transition-colors" href="#">
+<span class="material-symbols-outlined">call</span>
+<span class="font-['Be_Vietnam_Pro'] text-[10px] font-bold uppercase tracking-widest mt-1">Call</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#feb300] text-black rounded-xl px-6 py-2 scale-110 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shopping_cart</span>
+<span class="font-['Be_Vietnam_Pro'] text-[10px] font-bold uppercase tracking-widest mt-1">Order</span>
+</a>
+</nav>
+</body></html>
