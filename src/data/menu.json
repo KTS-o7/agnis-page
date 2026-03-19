@@ -12,7 +12,7 @@
           "currency": "₹",
           "spiceLevel": 1,
           "tags": ["best-seller"],
-          "image": "/images/classic-burger.jpg",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDPefwPapRRw1ArSBSPgNen3Q6LVIqsTb48w6w-5-eTiTevXs2fj_Cf6ghNqQBDF22C6OLiIHwYDifEq9HN7pYuKmvt2HL9OXu9PBVFlUsPSsNlP68UcPZC5a_6Se7HP1Ot_yLV5CdJAogB9Ncb0Y-4TFx7s7j0hL-_Jt8BkvA66U1TDO5bRd_eTy6WwJp6mglxo6h8fv8HRJ6lHWHyYGUKExK8UGjFZY1pHBiAHT8LqaF3qPRZAm1oflRYHA64C_ojWiKt_hkiAtVE",
           "imageAlt": "Classic beef burger with lettuce and tomato"
         },
         {
@@ -23,7 +23,7 @@
           "currency": "₹",
           "spiceLevel": 3,
           "tags": [],
-          "image": "/images/inferno-burger.jpg",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBABeWQpNptaexXM6_7XmBOtuSjv06Tg0At9nyK5zxK9V84Cmokr6QQ4j4Yt14Up-7kGa8JJBHoz70tUrZ-ZKFxABDRQPmd0SMh8pGHT3KP6397k_3Pw6RhijA3gvfwkudxtV2C03EkF6Z3YhLPKIONqskh7itnYx35yu7v9XKPYakT-zC7AqWQnIjNRMd7ObS1q7FFkDjjCcuSiQbXuZOl8oyIgUpWaPTzgGhi6Geejg9N8gw-3O-b_rRi4KKpOgaBXyBn23_htmV6",
           "imageAlt": "A thick juicy beef burger with melting cheese and spicy sauce"
         },
         {
@@ -34,7 +34,7 @@
           "currency": "₹",
           "spiceLevel": 1,
           "tags": [],
-          "image": "/images/citrus-fire-chicken.jpg",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCnPVwWgjl7xhCOPY5pe7r9asTUFjP2i-Cmtv6ZI2Oq2uGazM3s3lm7qazNXGrdWdQNcOhT-grx6IYMKf9qqTXnzf1ArPBqumCwN6UhzuyucXUbP1GOsq9X68_EumEPvz8QhoBPa2KuaYZSbj7RytHxbysq2glBPVOBQpLBjiNJKp4Sy3KV_nF6wzonTxn8h9ItzT8Z60AQg3ha3CGmv0PTGb_00axPQuLLSGzwfGxDgCScRxFVAmio7BBjfGeb0WDlWWFXZfMUOwTS",
           "imageAlt": "Golden fried chicken breast burger with crisp lettuce"
         }
       ]
@@ -51,7 +51,7 @@
           "currency": "₹",
           "spiceLevel": 2,
           "tags": ["best-seller"],
-          "image": "/images/spicy-fish-fry.jpg",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCbimrnupdB8HWhFgBho7qFL03qv5oZ42iTtbILdBcngCENS7uw3whYr2MKrPsuoErz9Iihj_9StLNBQ-PBjuPI2MC-3DswTDeLECaIfchqlLw8E1vlwrfbKqYEs4RCgAu29yciNplE41RxwMujTW0TZ4pAifm5I3nqNzcdeF1zFIVXT6IbgqixWabzYm5QJzRZ2p7MqnmLfnPZv6cpn09UfJBAk97b7ueZXTlQ5GCcRfYBgKY6MfVp2D6rgnhpdDzVe8FzHMbaGNCn",
           "imageAlt": "Spicy coastal fried fish fillet with local spices"
         },
         {
@@ -62,7 +62,7 @@
           "currency": "₹",
           "spiceLevel": 2,
           "tags": ["best-seller"],
-          "image": "/images/signature-fish.jpg",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD-c0IpSy5rZi2vcZvTvDbkwPdT5uWSb1Pi2W0fGDbNLtPSrMmBcOpqDJQRlWacEA-58qiRdbYVAb3zYrm8AnEg_OA8cPoMl85o81WMSMXvDxifv6yhns5KSAo2QVKUmaQUS6J2-uAh5ri3kX3qBsR7vG10AZmcH3rKEIplcGo_bUhNmj_wTdQXsccxRsX1XJcv56x9IkIETzN-YXlNakW2xRxu-v9zJ03Wga3Mqwulm83t-k6_YxjVi13ks_s-8T9iyJpvLpj3_Jbe",
           "imageAlt": "Grilled fish fillet with herbs"
         },
         {
@@ -73,7 +73,7 @@
           "currency": "₹",
           "spiceLevel": 2,
           "tags": [],
-          "image": "/images/dynamite-prawns.jpg",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB6xQPMovx42y6S8BHRItajtz6oneN1QfG-vPg3P-p8ePdIkEFJd0y9NQ_bALnM6Rrshff4PT6S7u1XsnE_M_hiils7LpZ49oVEaFzUYOwa69AjSOoWhRMeKcXIJhQMs_W4JGez5-1QQVuUuCCA8y_TYCQCO7FOqaLzXdMvctEPDUdC3NnDAD1an_pwBUTjNlyW8uyiW5z5B906WimTv8pOrQa5yAT2rt3cIk7y9Gp5-co5V7oK1G9wy4wOqpzzGgWqZ5QPPtR_1rT1",
           "imageAlt": "Crispy breaded shrimp with a spicy dipping sauce"
         }
       ]
@@ -90,7 +90,7 @@
           "currency": "₹",
           "spiceLevel": 1,
           "tags": [],
-          "image": "/images/chicken-tenders.jpg",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBk9BrzvsfgmtZPTR_LWYc30i35UwEMfGHJuu5VtaqaMw_-yo6IgEKRr0R0EHk4v372gmUQY5rfIa3yOxDuqerDj83r-cXO2KBMq_UFg8t_LKa847ktTMqe9APJ-Lip_TEuhcOJoeDfNQM1Ei6tbfak3QnN82HryDtJTmvrztwcabtRI6llm4dBKj-Fnjk-rdVjjx0ITlNsCRsgoo7cGZlL_FitWoo76qbff0tTzcMBXr_8WM59YAkUGIkFNLOru-XPFqtxwo8wp8_j",
           "imageAlt": "Golden crispy chicken tenders with dip"
         },
         {
@@ -101,7 +101,7 @@
           "currency": "₹",
           "spiceLevel": 3,
           "tags": ["best-seller"],
-          "image": "/images/dynamite-strips.jpg",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAKGzkM6x7JQKxBo-tU4kDXskx3MEh6F7KCo2yN8Tmujc1beMvHbFyZ-4c7_eRJtCEE3hPcJjPZEYDObrL-7g_uSmdjZb3tRAFtRw52PTGYGWFJSKMJjjW3_G6E5xVm2CIWzPgbkfczs7zfEubFKPFncEoSWyqR9ARqCLiL20jqssSrd8QwIpD7DdSI6udUriJDT3yVxfoJrn66D27V1P2DFWuq6TxiYBAtKtLxbqahdSZNJKPKNX5OTKOO5QONQk2cJXy_5tjbVmWo",
           "imageAlt": "Crispy fried chicken strips"
         }
       ]
@@ -118,7 +118,7 @@
           "currency": "₹",
           "spiceLevel": 2,
           "tags": [],
-          "image": "/images/peri-peri-fries.jpg",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxdcPgqbed7GJ3HgxfpoZF2EMaCOhL9Gt288ZYcyd2rQso-lMph-68VtfkjNzgFkW_Alr0Ugxw9dpOcuxXBOE3EIIkxkLpNQCHiLLewT7I8MwobLEggqADK9PhgbJ1DMXzJfjhZ2XEWlZK-VBvBrWsvOncyYMbqBuu-dncZzYer--6dixvEP7f12VO_x0jPtG2AzJ3wH5qQCwBQhG-qZAA4W6IGzTlZ1HXO09v3qvD9rfZntpSQg0fSSxy8rhnCDDrevLmcQozxx04",
           "imageAlt": "Fries tossed in red peri peri spice powder"
         },
         {
@@ -129,7 +129,7 @@
           "currency": "₹",
           "spiceLevel": 1,
           "tags": [],
-          "image": "/images/masala-dust-fries.jpg",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA7nVrHNA9TQ4sOAIjNwu_ohVPiN4wRMooo95EHYHOPRS5mh5-mG9gcbtctu1geRk6FWNLEdVbOVnaQA1cL7EVP6ykpmjENTvIc3w8JX44Ogl7vZnkRmqGx1TCu1rkfZjG3vBnV21W7zX_FXJU6F8f-YK0VPeQAR9vFv1KdqIUgiMeWhkWBY6mkm_xCCVAeOGCw7xT5hjs12sbnobdZo1gQJWf0Y7KCmkP5t_mThqNWaRFm5ctjpwpvJcGOwhFjVGpmGQ7F7FIel8l-",
           "imageAlt": "Golden fries sprinkled with red masala spice"
         },
         {
@@ -140,7 +140,7 @@
           "currency": "₹",
           "spiceLevel": 3,
           "tags": [],
-          "image": "/images/volcano-loaded.jpg",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBASnEdycwBSWMtg1V1-48WsKvGtFo_oPVOkjYdwXJnCAHxP7S29nBLRsmnJeozBm6svRBRQfGXFaQE2FVmM7PoSAItDqkeiWSWMNccvgX6LdIoX6f_LmqlxBceW-d_vA1K4JhlSdLUwKHXQR0tB8WkQC99fDoBUVBmINRraonBJX4N3dtHh8m-2_LBtnAGTtd4SsKXWQXd2EWkGXbs9AgqH4TpC-ucu0MePzmJiQmfwgdLggjbno1PN8uNj3R9XcaWbA13cgkKLiLR",
           "imageAlt": "Loaded fries with melted cheese and spicy sauce"
         }
       ]
@@ -157,7 +157,7 @@
           "currency": "₹",
           "spiceLevel": 3,
           "tags": ["chef-special"],
-          "image": "/images/coastal-ember-feast.jpg",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCbL7mdYOoJrfmr-4WI_TVLC8J6-6GnD3O-KF7cZUhiqfk2WQLT7jC95YatB8TdLBJJGAzIYA3sRq0g0UP4RmqhuICpsNoIsrlD9yuT9b5X3LemRsJflidoDzR4gsCpvtqUxHdaCv6GvGg6hWIEplLdho4r7Iucn8uhu0Sl5elQt8ajVImWJrdkkZWZ7SZYvJdki-odFpQ2Mi-ah7QpHWhUxEIoLxFCb7YhEcXB1zx60o_BpoAAGtYb3_TNEo6vOytSHJB0HwkmlDNL",
           "imageAlt": "Close up of a gourmet fried chicken and fish combo platter"
         }
       ]
