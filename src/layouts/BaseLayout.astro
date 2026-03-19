@@ -1,0 +1,156 @@
+---
+// src/layouts/BaseLayout.astro
+import '../styles/global.css';
+import '@fontsource/epilogue/700.css';
+import '@fontsource/epilogue/800.css';
+import '@fontsource/epilogue/900.css';
+import '@fontsource/be-vietnam-pro/300.css';
+import '@fontsource/be-vietnam-pro/400.css';
+import '@fontsource/be-vietnam-pro/500.css';
+import '@fontsource/be-vietnam-pro/700.css';
+import site from '../data/site.json';
+
+interface Props {
+  title: string;
+  description?: string;
+  ogImage?: string;
+  activePage?: 'home' | 'menu' | 'location' | 'contact';
+}
+
+const {
+  title,
+  description = site.description,
+  ogImage = '/og-image.jpg',
+  activePage = 'home',
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const navLinks = [
+  { label: 'Home', href: '/', key: 'home' },
+  { label: 'Menu', href: '/menu', key: 'menu' },
+  { label: 'Location', href: '/#location', key: 'location' },
+  { label: 'Contact', href: '/#contact', key: 'contact' },
+];
+---
+
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    <title>{title}</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": site.name,
+      "description": site.description,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": site.address,
+      },
+      "telephone": site.phone,
+      "openingHours": "Mo-Su 12:30-22:30",
+      "servesCuisine": ["Seafood", "Chicken", "Burgers"],
+      "priceRange": "₹₹",
+    })} />
+  </head>
+
+  <body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary-fixed">
+
+    <!-- Top Navigation -->
+    <header class="fixed top-0 w-full flex justify-between items-center px-6 py-4 z-50 bg-surface/70 backdrop-blur-xl">
+      <a href="/" class="flex items-center gap-3">
+        <img src={site.logo} alt={`${site.name} logo`} class="w-10 h-10 rounded-full object-cover" width="40" height="40" />
+        <span class="text-2xl font-black text-primary uppercase tracking-tighter font-headline">{site.name}</span>
+      </a>
+      <nav class="hidden md:flex items-center space-x-8 font-headline font-black tracking-tight text-on-surface" aria-label="Main navigation">
+        {navLinks.map(link => (
+          <a
+            href={link.href}
+            class={`transition-all duration-300 ${
+              activePage === link.key
+                ? 'text-secondary font-bold border-b-2 border-secondary pb-1'
+                : 'text-on-surface-variant hover:text-secondary'
+            }`}
+          >
+            {link.label}
+          </a>
+        ))}
+      </nav>
+      <button class="md:hidden text-primary p-2" aria-label="Open menu" aria-expanded="false" id="mobile-menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </header>
+
+    <!-- Page content -->
+    <main>
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full flex flex-col items-center text-center space-y-8 bg-surface py-12 px-6 border-t border-outline-variant/15">
+      <a href="/" class="flex items-center gap-3">
+        <img src={site.logo} alt={`${site.name} logo`} class="w-10 h-10 rounded-full object-cover" width="40" height="40" />
+        <span class="text-xl font-black text-primary uppercase tracking-tighter font-headline">{site.name}</span>
+      </a>
+      <nav class="flex flex-wrap justify-center gap-8 font-body text-sm text-on-surface-variant" aria-label="Footer navigation">
+        <a class="hover:text-primary transition-colors" href="/privacy">Privacy Policy</a>
+        <a class="hover:text-primary transition-colors" href="/terms">Terms of Service</a>
+        <a class="hover:text-primary transition-colors" href={site.maps} target="_blank" rel="noopener noreferrer">Location</a>
+        <a class="hover:text-primary transition-colors" href={site.social.instagram} target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a class="hover:text-primary transition-colors" href={site.zomato} target="_blank" rel="noopener noreferrer">Order on Zomato</a>
+        <a class="hover:text-primary transition-colors" href={site.swiggy} target="_blank" rel="noopener noreferrer">Order on Swiggy</a>
+      </nav>
+      <p class="font-body text-sm text-on-surface-variant">© {new Date().getFullYear()} {site.name} Fish Chicken Fries. Embers of the Coast.</p>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav
+      class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-surface-container/80 backdrop-blur-2xl rounded-t-2xl shadow-[0_-4px_20px_rgba(255,115,76,0.05)]"
+      aria-label="Mobile navigation"
+    >
+      <a href={site.zomato} class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:text-primary transition-colors active:scale-95" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/>
+        </svg>
+        <span class="font-body text-[10px] font-bold uppercase tracking-widest mt-1">Zomato</span>
+      </a>
+      <a href="/menu" class="flex flex-col items-center justify-center bg-secondary text-on-primary-fixed rounded-xl px-6 py-2 scale-110 active:scale-95 transition-all shadow-lg shadow-secondary/20">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63H15.55c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96C5 15.1 5.9 16 7 16h12v-2H7.42c-.13 0-.25-.11-.25-.25z"/>
+        </svg>
+        <span class="font-body text-[10px] font-bold uppercase tracking-widest mt-1">Menu</span>
+      </a>
+      <a href={`tel:${site.phone}`} class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:text-primary transition-colors active:scale-95">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+        </svg>
+        <span class="font-body text-[10px] font-bold uppercase tracking-widest mt-1">Call</span>
+      </a>
+    </nav>
+
+  </body>
+</html>

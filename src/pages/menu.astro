@@ -1,0 +1,125 @@
+---
+// src/pages/menu.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FoodCard from '../components/FoodCard.astro';
+import SectionLabel from '../components/SectionLabel.astro';
+import menuData from '../data/menu.json';
+import siteData from '../data/site.json';
+
+const allItems = menuData.categories.flatMap(cat => cat.items);
+const featuredCombo = allItems.find(item => item.tags.includes('chef-special'));
+---
+
+<BaseLayout
+  title={`Menu | ${siteData.name} Fish Chicken Fries`}
+  description="Explore Agni's full menu — burgers, seafood, chicken, fries and combos. Coastal Mangalore flavors, made fresh to order."
+  activePage="menu"
+>
+  <!-- Hero: Featured Combo -->
+  {featuredCombo && (
+    <section class="pt-24 mb-20 px-6 max-w-7xl mx-auto">
+      <div class="relative w-full h-[500px] overflow-hidden rounded-xl bg-surface-container-highest group">
+        <img
+          src={featuredCombo.image}
+          alt={featuredCombo.imageAlt}
+          class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
+          fetchpriority="high"
+          decoding="async"
+          width="1200"
+          height="500"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent"></div>
+        <div class="relative h-full flex flex-col justify-center px-12 max-w-2xl">
+          <SectionLabel text="Chef's Special" />
+          <h1 class="font-headline text-6xl font-black tracking-tighter mb-4 text-on-surface leading-none mt-4">
+            THE COASTAL<br /><span class="text-primary">EMBER FEAST</span>
+          </h1>
+          <p class="text-on-surface-variant text-lg mb-8 font-body leading-relaxed">{featuredCombo.description}</p>
+          <div class="flex flex-wrap items-center gap-4">
+            <a
+              href={siteData.zomato}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-primary text-on-primary-fixed font-black px-8 py-4 rounded-md text-lg tracking-tight hover:bg-primary-fixed-dim transition-all shadow-lg shadow-primary/10"
+            >
+              ORDER ON ZOMATO
+            </a>
+            <a
+              href={siteData.swiggy}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-surface-container-highest border border-outline-variant/15 text-on-surface font-black px-8 py-4 rounded-md text-lg tracking-tight hover:bg-surface-container-high transition-all"
+            >
+              ORDER ON SWIGGY
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Menu Grid -->
+  <div class="flex flex-col md:flex-row gap-12 px-6 max-w-7xl mx-auto pb-32">
+    <!-- Sidebar -->
+    <aside class="md:w-64 flex-shrink-0">
+      <nav class="sticky top-28 space-y-2" aria-label="Menu categories">
+        <p class="font-headline font-black text-xs uppercase tracking-[0.3em] text-outline mb-6 px-4">Categories</p>
+        {menuData.categories.map((cat, i) => (
+          <a
+            href={`#${cat.id}`}
+            class={`group flex items-center justify-between px-4 py-4 rounded-md transition-all ${
+              i === 0
+                ? 'bg-surface-container-highest text-secondary border-l-4 border-secondary'
+                : 'hover:bg-surface-container-low text-on-surface-variant hover:text-on-surface'
+            }`}
+          >
+            <span class="font-bold tracking-tight font-headline">{cat.label.toUpperCase()}</span>
+          </a>
+        ))}
+      </nav>
+    </aside>
+
+    <!-- Items -->
+    <div class="flex-grow space-y-24">
+      {menuData.categories.map(cat => (
+        <section id={cat.id}>
+          <div class="flex items-baseline space-x-4 mb-10">
+            <h2 class="font-headline text-4xl font-black tracking-tighter text-on-surface">
+              {cat.label.toUpperCase()}
+            </h2>
+            <div class="h-[2px] flex-grow bg-gradient-to-r from-outline-variant/30 to-transparent" aria-hidden="true"></div>
+          </div>
+          <div class={`grid gap-8 ${cat.items.length >= 3 ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3' : 'grid-cols-1 md:grid-cols-2'}`}>
+            {cat.items.map(item => (
+              <FoodCard
+                name={item.name}
+                description={item.description}
+                price={item.price}
+                currency={item.currency}
+                spiceLevel={item.spiceLevel as 1|2|3}
+                tags={item.tags}
+                image={item.image}
+                imageAlt={item.imageAlt}
+                layout="grid"
+              />
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  </div>
+
+  <!-- Floating Order CTA -->
+  <a
+    href={siteData.zomato}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="fixed bottom-24 md:bottom-10 right-6 md:right-10 z-[60] flex items-center gap-3 bg-secondary text-on-primary-fixed px-6 py-4 rounded-full shadow-2xl shadow-secondary/20 hover:scale-105 active:scale-95 transition-all"
+    aria-label="Order on Zomato"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/>
+    </svg>
+    <span class="font-bold tracking-tight uppercase text-sm font-body hidden md:inline">Order on Zomato</span>
+  </a>
+</BaseLayout>

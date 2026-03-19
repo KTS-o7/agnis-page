@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Agni’s – Fish Chicken Fries</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Be+Vietnam+Pro:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-container": "#480d00",
+              "surface-container-high": "#20201f",
+              "inverse-surface": "#fcf9f8",
+              "error": "#ff716c",
+              "on-tertiary-fixed-variant": "#7a000b",
+              "inverse-primary": "#b22e00",
+              "error-container": "#9f0519",
+              "inverse-on-surface": "#565555",
+              "error-dim": "#d7383b",
+              "secondary-fixed": "#ffc96f",
+              "surface-bright": "#2c2c2c",
+              "secondary-fixed-dim": "#ffb623",
+              "surface-container": "#1a1a1a",
+              "on-primary": "#5c1300",
+              "primary-fixed-dim": "#ff5d2e",
+              "on-secondary-fixed-variant": "#6c4a00",
+              "primary": "#ff8f70",
+              "on-secondary": "#523700",
+              "surface-container-low": "#131313",
+              "on-secondary-fixed": "#483000",
+              "surface-container-lowest": "#000000",
+              "tertiary-fixed": "#ff9289",
+              "secondary-dim": "#eda600",
+              "on-tertiary-container": "#1f0001",
+              "on-error-container": "#ffa8a3",
+              "on-surface": "#ffffff",
+              "on-tertiary": "#4a0004",
+              "surface-container-highest": "#262626",
+              "on-tertiary-fixed": "#3a0002",
+              "tertiary-fixed-dim": "#ff7b71",
+              "primary-container": "#ff7852",
+              "surface-dim": "#0e0e0e",
+              "secondary-container": "#7e5700",
+              "tertiary": "#ff7168",
+              "on-surface-variant": "#adaaaa",
+              "on-background": "#ffffff",
+              "background": "#0e0e0e",
+              "outline": "#767575",
+              "on-primary-fixed-variant": "#581200",
+              "tertiary-dim": "#ff7168",
+              "surface-variant": "#262626",
+              "on-secondary-container": "#fff6ee",
+              "surface": "#0e0e0e",
+              "on-primary-fixed": "#000000",
+              "secondary": "#feb300",
+              "primary-fixed": "#ff7852",
+              "primary-dim": "#ff734c",
+              "tertiary-container": "#fe4e49",
+              "on-error": "#490006",
+              "outline-variant": "#484847",
+              "surface-tint": "#ff8f70"
+            },
+            fontFamily: {
+              "headline": ["Epilogue"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-6 py-4 z-50 bg-[#0e0e0e]/70 backdrop-blur-xl">
+<div class="text-2xl font-black text-[#ff8f70] uppercase tracking-tighter font-headline">Agni’s</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-[#feb300] font-bold border-b-2 border-[#feb300] pb-1 font-body" href="#">Home</a>
+<a class="text-[#adaaaa] hover:text-white transition-colors font-body" href="#">Menu</a>
+<a class="text-[#adaaaa] hover:text-white transition-colors font-body" href="#">Location</a>
+<a class="text-[#adaaaa] hover:text-white transition-colors font-body" href="#">Contact</a>
+</nav>
+<button class="material-symbols-outlined md:hidden text-white scale-95 active:scale-90 transition-transform" data-icon="menu">menu</button>
+</header>
+<main class="pt-16 pb-32">
+<!-- Hero Section -->
+<section class="relative w-full aspect-[4/5] md:aspect-video flex flex-col justify-end px-6 pb-12 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Sizzling grilled fish on a hot plate" class="w-full h-full object-cover grayscale-[20%] contrast-125" data-alt="Sizzling grilled fish on a hot plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcbjrXpnhzRj-9kcqQJZRuz2-8aKP47A_MmoXmK7Y4x1JHCuPDpUqhmARZGSH02xMDQKas1WkKYifnH1GXHavDJ561FXEEV40lnpAFoyC158LFmTMet1U4dQHK5DTJCOD4fhYMZH-u4UD2kPdXQhoEzBcTc_0Yow0TV9xVcrYuMQ-VDcSFsEDbxw2d1aiCBe6JDzkcpGtNvk3sovIZZ8j5723PJwqlFSQMI_-OSENTtlia8JZtLAtNhvwNHHRtuuxKzBxhqz8mvcBR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+</div>
+<div class="relative z-10 space-y-4">
+<h1 class="font-headline text-5xl md:text-7xl font-black tracking-tight leading-tight">
+<span class="text-primary">FIERY</span><br/>
+<span class="text-on-surface">COASTAL</span><br/>
+<span class="text-on-surface">GRIT.</span>
+</h1>
+<p class="text-on-surface-variant max-w-xs md:max-w-md font-medium text-lg leading-relaxed">
+                    Fresh catch, secret spices, and the raw energy of the street grill.
+                </p>
+<div class="pt-4">
+<a class="inline-flex items-center gap-3 bg-gradient-to-r from-primary to-primary-container px-8 py-4 rounded-xl text-on-primary-fixed font-bold text-lg hover:scale-105 transition-transform active:scale-95 shadow-lg shadow-primary/20" href="#">
+<span class="material-symbols-outlined" data-icon="chat" style="font-variation-settings: 'FILL' 1;">chat</span>
+                        Order on WhatsApp
+                    </a>
+</div>
+</div>
+</section>
+<!-- Top Sellers -->
+<section class="mt-12 px-6">
+<div class="flex justify-between items-end mb-8">
+<h2 class="font-headline text-3xl font-extrabold tracking-tight">Top Sellers</h2>
+<span class="text-secondary font-bold text-xs uppercase tracking-widest pb-1">Hot right now</span>
+</div>
+<div class="space-y-6">
+<!-- Item 1 -->
+<div class="group bg-surface-container-highest p-4 rounded-xl flex gap-4 items-center transition-all hover:bg-surface-container-high active:scale-[0.98]">
+<div class="relative h-24 w-24 flex-shrink-0 rounded-lg overflow-hidden">
+<img alt="Grilled Salmon Fillet" class="h-full w-full object-cover group-hover:scale-110 transition-transform" data-alt="Grilled Salmon Fillet with herbs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-c0IpSy5rZi2vcZvTvDbkwPdT5uWSb1Pi2W0fGDbNLtPSrMmBcOpqDJQRlWacEA-58qiRdbYVAb3zYrm8AnEg_OA8cPoMl85o81WMSMXvDxifv6yhns5KSAo2QVKUmaQUS6J2-uAh5ri3kX3qBsR7vG10AZmcH3rKEIplcGo_bUhNmj_wTdQXsccxRsX1XJcv56x9IkIETzN-YXlNakW2xRxu-v9zJ03Wga3Mqwulm83t-k6_YxjVi13ks_s-8T9iyJpvLpj3_Jbe"/>
+<div class="absolute top-1 left-1 bg-tertiary text-[10px] font-black px-1.5 py-0.5 rounded text-on-tertiary uppercase">🔥 Best Seller</div>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<h3 class="font-bold text-lg leading-tight">Agni's Signature Fish</h3>
+<span class="text-primary font-bold">₹340</span>
+</div>
+<p class="text-on-surface-variant text-sm mt-1 line-clamp-2">Secret malvani rub, charcoal grilled to perfection.</p>
+<div class="flex mt-2 gap-1">
+<span class="material-symbols-outlined text-tertiary text-xs" data-icon="restaurant" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<span class="material-symbols-outlined text-tertiary text-xs" data-icon="restaurant" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<span class="material-symbols-outlined text-outline-variant text-xs" data-icon="restaurant">restaurant</span>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group bg-surface-container-highest p-4 rounded-xl flex gap-4 items-center transition-all hover:bg-surface-container-high active:scale-[0.98]">
+<div class="relative h-24 w-24 flex-shrink-0 rounded-lg overflow-hidden">
+<img alt="Crispy Fried Chicken" class="h-full w-full object-cover group-hover:scale-110 transition-transform" data-alt="Crispy Fried Chicken strips" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKGzkM6x7JQKxBo-tU4kDXskx3MEh6F7KCo2yN8Tmujc1beMvHbFyZ-4c7_eRJtCEE3hPcJjPZEYDObrL-7g_uSmdjZb3tRAFtRw52PTGYGWFJSKMJjjW3_G6E5xVm2CIWzPgbkfczs7zfEubFKPFncEoSWyqR9ARqCLiL20jqssSrd8QwIpD7DdSI6udUriJDT3yVxfoJrn66D27V1P2DFWuq6TxiYBAtKtLxbqahdSZNJKPKNX5OTKOO5QONQk2cJXy_5tjbVmWo"/>
+<div class="absolute top-1 left-1 bg-tertiary text-[10px] font-black px-1.5 py-0.5 rounded text-on-tertiary uppercase">🔥 Best Seller</div>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<h3 class="font-bold text-lg leading-tight">Dynamite Strips</h3>
+<span class="text-primary font-bold">₹220</span>
+</div>
+<p class="text-on-surface-variant text-sm mt-1 line-clamp-2">Crispy breast strips with ghost pepper mayo.</p>
+<div class="flex mt-2 gap-1">
+<span class="material-symbols-outlined text-tertiary text-xs" data-icon="restaurant" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<span class="material-symbols-outlined text-tertiary text-xs" data-icon="restaurant" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<span class="material-symbols-outlined text-tertiary text-xs" data-icon="restaurant" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="group bg-surface-container-highest p-4 rounded-xl flex gap-4 items-center transition-all hover:bg-surface-container-high active:scale-[0.98]">
+<div class="relative h-24 w-24 flex-shrink-0 rounded-lg overflow-hidden">
+<img alt="Spicy Beef Burger" class="h-full w-full object-cover group-hover:scale-110 transition-transform" data-alt="Large beef burger with melted cheese" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKlpGGhr6n_TXHRSvcDRW0wqbjza_7W1_-hbbzH0hFSQ4ZM2xahO-FEsSUAt0lAlUpPPYPj-VbztRxWb5_t-tgAb3IqdBAGU7rZEyKs11aqP298CCW_LGm9e_T1nLdDX1kDU9TOOthkqP0fqs0xQQ9J9y2vDxcci3AT3VrTg3D4SFigAAwTzm339QZ-lUfrNxOhJP9Jw0GeoqqkzbW3YcQk65Zlvwu9EMi0a68sSmA_l--wMxerO4auyWCAu2OtW7-wn_YOhltyC8g"/>
+<div class="absolute top-1 left-1 bg-tertiary text-[10px] font-black px-1.5 py-0.5 rounded text-on-tertiary uppercase">🔥 Best Seller</div>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<h3 class="font-bold text-lg leading-tight">Coastal Smash</h3>
+<span class="text-primary font-bold">₹280</span>
+</div>
+<p class="text-on-surface-variant text-sm mt-1 line-clamp-2">Double patty, sharp cheddar, and caramelized onions.</p>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="group bg-surface-container-highest p-4 rounded-xl flex gap-4 items-center transition-all hover:bg-surface-container-high active:scale-[0.98]">
+<div class="relative h-24 w-24 flex-shrink-0 rounded-lg overflow-hidden">
+<img alt="Loaded Peri Peri Fries" class="h-full w-full object-cover group-hover:scale-110 transition-transform" data-alt="Bowl of loaded fries with spicy sauce" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApa2o8Vnx3fPIjnOBz4mKSnd1jr8cdmnXa6Y4mwnPOsPfxoTaog5tbx8gHWGyG3-I4N9JodO95nQlMGA5p8WIa2CrCRmWhIREqxEDbrJ9h4oCbtcSc5ZzGi35YDGSz_DfQAoMsGKYduObfHpKcjed2QsMICP4g1kWuQ9ZvEbq49LkaFJm_6kcoUNIcWjfNmdRajOOluwGiOHqq4hJTFMecgqqqe1xvy04c809WOkqxhqO5wcSp1EE6Ktvntlthc-T4KINZmNUav7sv"/>
+<div class="absolute top-1 left-1 bg-tertiary text-[10px] font-black px-1.5 py-0.5 rounded text-on-tertiary uppercase">🔥 Best Seller</div>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<h3 class="font-bold text-lg leading-tight">Fire Cracker Fries</h3>
+<span class="text-primary font-bold">₹160</span>
+</div>
+<p class="text-on-surface-variant text-sm mt-1 line-clamp-2">Peri-peri salted, tossed in garlic butter.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Peek (Tabs) -->
+<section class="mt-16 bg-surface-container-low py-12">
+<div class="px-6 mb-8">
+<h2 class="font-headline text-3xl font-extrabold tracking-tight">The Lab</h2>
+<div class="flex gap-4 mt-6 overflow-x-auto hide-scrollbar">
+<button class="bg-primary text-on-primary-fixed px-6 py-2 rounded-md font-bold whitespace-nowrap">Burgers</button>
+<button class="bg-surface-container-highest text-on-surface-variant px-6 py-2 rounded-md font-bold border border-outline-variant/15 whitespace-nowrap">Seafood</button>
+<button class="bg-surface-container-highest text-on-surface-variant px-6 py-2 rounded-md font-bold border border-outline-variant/15 whitespace-nowrap">Fries</button>
+</div>
+</div>
+<div class="px-6 grid grid-cols-2 gap-4">
+<div class="bg-surface-container-highest p-3 rounded-xl space-y-3">
+<img alt="Classic Cheeseburger" class="aspect-square w-full object-cover rounded-lg" data-alt="Gourmet classic cheeseburger" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAttUQErjl6_m-KrGT5y2P0I9Nzh2zHYtO0O6u5dsSAYC8I9wzEx4gi7gHok1eLrREP2cMvxhE8Jo0NV6H-hlWWqQPTRXg2BA_5RIPo1Qs0YneLB-f2hI0XSnrniX_TivRLRVkp7XhUVMQ30Oq6Oa03Pi0ePqisCTW89ZZn70hZDeU3sVj-d0qrgjv_iTsuV_W_Etbhptf8Vk3Rq-VixL00E01x7H7Zj8XX59aSz6o3Lyh1zHXrfkFWB8sbnwVUQKDl5FDzF1Y6p2Tt"/>
+<div>
+<h4 class="font-bold text-sm">Old School</h4>
+<span class="text-secondary font-black text-sm">₹190</span>
+</div>
+</div>
+<div class="bg-surface-container-highest p-3 rounded-xl space-y-3">
+<img alt="BBQ Chicken Burger" class="aspect-square w-full object-cover rounded-lg" data-alt="Barbecue chicken burger with lettuce" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPqbOcyrVOTZ7zWF6Pv9CPfvNwJhBCbQYen54WCO_B7QRrvTW1GWkbB8PCIQziNiGc7cCV-7BcyQj5w7Dngf9wG9Q8CVE36S52L1K_CPIEfQE8OeLxk1rzLUOOy3i0Gkot6lEp7lhnOHdjlhOH4RWPhCshkTYTMU-HHgaQW6EOeuXtmV4zOWjtVrpf8kZHDiBOHgl6Af1KGm_PNeZxxvSvehbTzauxU6NwxwgR5uLopvLsM_ou1SKehQQdQWiEp7ZsP2up9aZVtsfq"/>
+<div>
+<h4 class="font-bold text-sm">BBQ Blaze</h4>
+<span class="text-secondary font-black text-sm">₹240</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Location & Hours -->
+<section class="mt-16 px-6 mb-12">
+<div class="bg-surface-container-highest rounded-2xl overflow-hidden">
+<div class="h-40 w-full relative">
+<div class="absolute inset-0 bg-primary/10 flex items-center justify-center">
+<img alt="Map location" class="w-full h-full object-cover opacity-40 grayscale" data-alt="Abstract dark city map pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh9C_bSasCBnvKlRXXhWQbJIZEBn97Cv2w9mwbvkpwQnF2rBH0B7QQ6-k7YmteqAurbRKHtraRspAsN2KoQZW0w7vsQvXPhEQd-8Sc8o8iQcPof8tjz61I-M6NLm2KAuaAgDlV2TSxFNbwu9SGHmPcU0FKlHmdoh_zgJzYsjX1Ioa9c5-gUXHrhPlhc4VZ6u4XW6GAdt_ppWnXoday7K6QhSkra3qFLRsTMf-CwVAvpLywiys0Gjwmx5qfELM0h_EmFb27SLBOOwOA"/>
+<div class="absolute z-10 bg-primary text-on-primary-fixed p-3 rounded-full shadow-xl animate-bounce">
+<span class="material-symbols-outlined" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</div>
+</div>
+<div class="p-6 space-y-4">
+<div>
+<h3 class="font-headline text-xl font-extrabold uppercase text-primary">Find Us</h3>
+<p class="text-on-surface-variant mt-1">42, Coastal Drive, North Harbour, Kochi</p>
+</div>
+<div class="flex items-center gap-6 pt-2 border-t border-outline-variant/15">
+<div class="flex flex-col">
+<span class="text-[10px] uppercase tracking-widest text-secondary font-black">Timings</span>
+<span class="font-bold text-lg">12:30 PM - 10:30 PM</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] uppercase tracking-widest text-secondary font-black">Status</span>
+<span class="text-emerald-400 font-bold text-lg flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                                Open Now
+                            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full flex flex-col items-center text-center space-y-8 py-12 px-6 border-t border-[#484847]/15 bg-[#0e0e0e]">
+<div class="text-xl font-black text-[#ff8f70] mb-4 font-headline uppercase">Agni’s</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-[#adaaaa] hover:text-[#ff8f70] transition-colors font-body text-sm" href="#">Privacy Policy</a>
+<a class="text-[#adaaaa] hover:text-[#ff8f70] transition-colors font-body text-sm" href="#">Terms of Service</a>
+<a class="text-[#adaaaa] hover:text-[#ff8f70] transition-colors font-body text-sm" href="#">Location</a>
+<a class="text-[#adaaaa] hover:text-[#ff8f70] transition-colors font-body text-sm" href="#">Contact</a>
+</div>
+<p class="font-['Be_Vietnam_Pro'] text-sm text-[#adaaaa]">© 2024 Agni’s Fish Chicken Fries. Embers of the Coast.</p>
+</footer>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-[#1a1a1a]/80 backdrop-blur-2xl rounded-t-2xl shadow-[0_-4px_20px_rgba(255,115,76,0.05)]">
+<a class="flex flex-col items-center justify-center text-[#adaaaa] px-4 py-2 hover:text-[#ff8f70] transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="chat">chat</span>
+<span class="font-['Be_Vietnam_Pro'] text-[10px] font-bold uppercase tracking-widest">WhatsApp</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#feb300] text-black rounded-xl px-6 py-2 scale-110 active:scale-95 transition-all shadow-lg shadow-secondary/20" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="shopping_cart" style="font-variation-settings: 'FILL' 1;">shopping_cart</span>
+<span class="font-['Be_Vietnam_Pro'] text-[10px] font-bold uppercase tracking-widest">Order</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#adaaaa] px-4 py-2 hover:text-[#ff8f70] transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="call">call</span>
+<span class="font-['Be_Vietnam_Pro'] text-[10px] font-bold uppercase tracking-widest">Call</span>
+</a>
+</nav>
+</body></html>

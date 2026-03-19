@@ -1,0 +1,167 @@
+{
+  "categories": [
+    {
+      "id": "burgers",
+      "label": "Burgers",
+      "items": [
+        {
+          "id": "classic-burger",
+          "name": "Classic Burger",
+          "description": "Juicy hand-pressed patty, secret house sauce, and charred buns.",
+          "price": 189,
+          "currency": "₹",
+          "spiceLevel": 1,
+          "tags": ["best-seller"],
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDPefwPapRRw1ArSBSPgNen3Q6LVIqsTb48w6w-5-eTiTevXs2fj_Cf6ghNqQBDF22C6OLiIHwYDifEq9HN7pYuKmvt2HL9OXu9PBVFlUsPSsNlP68UcPZC5a_6Se7HP1Ot_yLV5CdJAogB9Ncb0Y-4TFx7s7j0hL-_Jt8BkvA66U1TDO5bRd_eTy6WwJp6mglxo6h8fv8HRJ6lHWHyYGUKExK8UGjFZY1pHBiAHT8LqaF3qPRZAm1oflRYHA64C_ojWiKt_hkiAtVE",
+          "imageAlt": "Classic beef burger with lettuce and tomato"
+        },
+        {
+          "id": "inferno-burger",
+          "name": "The Inferno Burger",
+          "description": "Double beef patty, ghost pepper jack, charred jalapeños, and our signature Agni lava sauce.",
+          "price": 249,
+          "currency": "₹",
+          "spiceLevel": 3,
+          "tags": [],
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDPefwPapRRw1ArSBSPgNen3Q6LVIqsTb48w6w-5-eTiTevXs2fj_Cf6ghNqQBDF22C6OLiIHwYDifEq9HN7pYuKmvt2HL9OXu9PBVFlUsPSsNlP68UcPZC5a_6Se7HP1Ot_yLV5CdJAogB9Ncb0Y-4TFx7s7j0hL-_Jt8BkvA66U1TDO5bRd_eTy6WwJp6mglxo6h8fv8HRJ6lHWHyYGUKExK8UGjFZY1pHBiAHT8LqaF3qPRZAm1oflRYHA64C_ojWiKt_hkiAtVE",
+          "imageAlt": "A thick juicy beef burger with melting cheese and spicy sauce"
+        },
+        {
+          "id": "citrus-fire-chicken",
+          "name": "Citrus Fire Chicken",
+          "description": "Buttermilk fried chicken, lemon-zest slaw, and a mild peri-peri glaze on brioche.",
+          "price": 219,
+          "currency": "₹",
+          "spiceLevel": 1,
+          "tags": [],
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCnPVwWgjl7xhCOPY5pe7r9asTUFjP2i-Cmtv6ZI2Oq2uGazM3s3lm7qazNXGrdWdQNcOhT-grx6IYMKf9qqTXnzf1ArPBqumCwN6UhzuyucXUbP1GOsq9X68_EumEPvz8QhoBPa2KuaYZSbj7RytHxbysq2glBPVOBQpLBjiNJKp4Sy3KV_nF6wzonTxn8h9ItzT8Z60AQg3ha3CGmv0PTGb_00axPQuLLSGzwfGxDgCScRxFVAmio7BBjfGeb0WDlWWFXZfMUOwTS",
+          "imageAlt": "Golden fried chicken breast burger with crisp lettuce"
+        }
+      ]
+    },
+    {
+      "id": "seafood",
+      "label": "Seafood",
+      "items": [
+        {
+          "id": "spicy-fish-fry",
+          "name": "Spicy Fish Fry",
+          "description": "Fresh catch marinated in Agni's special coastal masala blend.",
+          "price": 249,
+          "currency": "₹",
+          "spiceLevel": 2,
+          "tags": ["best-seller"],
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCbimrnupdB8HWhFgBho7qFL03qv5oZ42iTtbILdBcngCENS7uw3whYr2MKrPsuoErz9Iihj_9StLNBQ-PBjuPI2MC-3DswTDeLECaIfchqlLw8E1vlwrfbKqYEs4RCgAu29yciNplE41RxwMujTW0TZ4pAifm5I3nqNzcdeF1zFIVXT6IbgqixWabzYm5QJzRZ2p7MqnmLfnPZv6cpn09UfJBAk97b7ueZXTlQ5GCcRfYBgKY6MfVp2D6rgnhpdDzVe8FzHMbaGNCn",
+          "imageAlt": "Spicy coastal fried fish fillet with local spices"
+        },
+        {
+          "id": "agnis-signature-fish",
+          "name": "Agni's Signature Fish",
+          "description": "Secret malvani rub, charcoal grilled to perfection.",
+          "price": 340,
+          "currency": "₹",
+          "spiceLevel": 2,
+          "tags": ["best-seller"],
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD-c0IpSy5rZi2vcZvTvDbkwPdT5uWSb1Pi2W0fGDbNLtPSrMmBcOpqDJQRlWacEA-58qiRdbYVAb3zYrm8AnEg_OA8cPoMl85o81WMSMXvDxifv6yhns5KSAo2QVKUmaQUS6J2-uAh5ri3kX3qBsR7vG10AZmcH3rKEIplcGo_bUhNmj_wTdQXsccxRsX1XJcv56x9IkIETzN-YXlNakW2xRxu-v9zJ03Wga3Mqwulm83t-k6_YxjVi13ks_s-8T9iyJpvLpj3_Jbe",
+          "imageAlt": "Grilled fish fillet with herbs"
+        },
+        {
+          "id": "dynamite-prawns",
+          "name": "Dynamite Prawns",
+          "description": "Jumbo prawns battered and tossed in a creamy, sriracha-infused dynamite sauce.",
+          "price": 320,
+          "currency": "₹",
+          "spiceLevel": 2,
+          "tags": [],
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB6xQPMovx42y6S8BHRItajtz6oneN1QfG-vPg3P-p8ePdIkEFJd0y9NQ_bALnM6Rrshff4PT6S7u1XsnE_M_hiils7LpZ49oVEaFzUYOwa69AjSOoWhRMeKcXIJhQMs_W4JGez5-1QQVuUuCCA8y_TYCQCO7FOqaLzXdMvctEPDUdC3NnDAD1an_pwBUTjNlyW8uyiW5z5B906WimTv8pOrQa5yAT2rt3cIk7y9Gp5-co5V7oK1G9wy4wOqpzzGgWqZ5QPPtR_1rT1",
+          "imageAlt": "Crispy breaded shrimp with a spicy dipping sauce"
+        }
+      ]
+    },
+    {
+      "id": "chicken",
+      "label": "Chicken",
+      "items": [
+        {
+          "id": "chicken-tenders",
+          "name": "Chicken Tenders",
+          "description": "Double-breaded for extra crunch. Served with hot garlic mayo.",
+          "price": 169,
+          "currency": "₹",
+          "spiceLevel": 1,
+          "tags": [],
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBk9BrzvsfgmtZPTR_LWYc30i35UwEMfGHJuu5VtaqaMw_-yo6IgEKRr0R0EHk4v372gmUQY5rfIa3yOxDuqerDj83r-cXO2KBMq_UFg8t_LKa847ktTMqe9APJ-Lip_TEuhcOJoeDfNQM1Ei6tbfak3QnN82HryDtJTmvrztwcabtRI6llm4dBKj-Fnjk-rdVjjx0ITlNsCRsgoo7cGZlL_FitWoo76qbff0tTzcMBXr_8WM59YAkUGIkFNLOru-XPFqtxwo8wp8_j",
+          "imageAlt": "Golden crispy chicken tenders with dip"
+        },
+        {
+          "id": "dynamite-strips",
+          "name": "Dynamite Strips",
+          "description": "Crispy breast strips with ghost pepper mayo.",
+          "price": 220,
+          "currency": "₹",
+          "spiceLevel": 3,
+          "tags": ["best-seller"],
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAKGzkM6x7JQKxBo-tU4kDXskx3MEh6F7KCo2yN8Tmujc1beMvHbFyZ-4c7_eRJtCEE3hPcJjPZEYDObrL-7g_uSmdjZb3tRAFtRw52PTGYGWFJSKMJjjW3_G6E5xVm2CIWzPgbkfczs7zfEubFKPFncEoSWyqR9ARqCLiL20jqssSrd8QwIpD7DdSI6udUriJDT3yVxfoJrn66D27V1P2DFWuq6TxiYBAtKtLxbqahdSZNJKPKNX5OTKOO5QONQk2cJXy_5tjbVmWo",
+          "imageAlt": "Crispy fried chicken strips"
+        }
+      ]
+    },
+    {
+      "id": "fries",
+      "label": "Fries",
+      "items": [
+        {
+          "id": "peri-peri-fries",
+          "name": "Peri Peri Fries",
+          "description": "Hand-cut potato fries dusted with African Bird's Eye chili.",
+          "price": 129,
+          "currency": "₹",
+          "spiceLevel": 2,
+          "tags": [],
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxdcPgqbed7GJ3HgxfpoZF2EMaCOhL9Gt288ZYcyd2rQso-lMph-68VtfkjNzgFkW_Alr0Ugxw9dpOcuxXBOE3EIIkxkLpNQCHiLLewT7I8MwobLEggqADK9PhgbJ1DMXzJfjhZ2XEWlZK-VBvBrWsvOncyYMbqBuu-dncZzYer--6dixvEP7f12VO_x0jPtG2AzJ3wH5qQCwBQhG-qZAA4W6IGzTlZ1HXO09v3qvD9rfZntpSQg0fSSxy8rhnCDDrevLmcQozxx04",
+          "imageAlt": "Fries tossed in red peri peri spice powder"
+        },
+        {
+          "id": "masala-dust-fries",
+          "name": "Masala Dust Fries",
+          "description": "Twice-fried with our secret blend of coastal spices.",
+          "price": 119,
+          "currency": "₹",
+          "spiceLevel": 1,
+          "tags": [],
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA7nVrHNA9TQ4sOAIjNwu_ohVPiN4wRMooo95EHYHOPRS5mh5-mG9gcbtctu1geRk6FWNLEdVbOVnaQA1cL7EVP6ykpmjENTvIc3w8JX44Ogl7vZnkRmqGx1TCu1rkfZjG3vBnV21W7zX_FXJU6F8f-YK0VPeQAR9vFv1KdqIUgiMeWhkWBY6mkm_xCCVAeOGCw7xT5hjs12sbnobdZo1gQJWf0Y7KCmkP5t_mThqNWaRFm5ctjpwpvJcGOwhFjVGpmGQ7F7FIel8l-",
+          "imageAlt": "Golden fries sprinkled with red masala spice"
+        },
+        {
+          "id": "volcano-loaded",
+          "name": "Volcano Loaded",
+          "description": "Smothered in melted cheddar and Agni hot sauce.",
+          "price": 179,
+          "currency": "₹",
+          "spiceLevel": 3,
+          "tags": [],
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBASnEdycwBSWMtg1V1-48WsKvGtFo_oPVOkjYdwXJnCAHxP7S29nBLRsmnJeozBm6svRBRQfGXFaQE2FVmM7PoSAItDqkeiWSWMNccvgX6LdIoX6f_LmqlxBceW-d_vA1K4JhlSdLUwKHXQR0tB8WkQC99fDoBUVBmINRraonBJX4N3dtHh8m-2_LBtnAGTtd4SsKXWQXd2EWkGXbs9AgqH4TpC-ucu0MePzmJiQmfwgdLggjbno1PN8uNj3R9XcaWbA13cgkKLiLR",
+          "imageAlt": "Loaded fries with melted cheese and spicy sauce"
+        }
+      ]
+    },
+    {
+      "id": "combos",
+      "label": "Combos",
+      "items": [
+        {
+          "id": "coastal-ember-feast",
+          "name": "The Coastal Ember Feast",
+          "description": "Two pieces of crispy fire-grilled fish, four signature spicy wings, hand-cut cajun fries, and our house-made lemon-garlic aioli.",
+          "price": 549,
+          "currency": "₹",
+          "spiceLevel": 3,
+          "tags": ["chef-special"],
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuApSvyavmFhDLVRv-MS25djB999ASysFHQ0QLU0eyvYxKOKysZm7V8tp1Ca2BY9SuQmu5TchagK3zvV6Ny9F8-bxzV56IDToR9cc4a4z_x8B5YRf96JSyz-GbMdzjS4N1Ebf-1ksBhmzW3lJCl50gZD_PTV0z_GBZGuKMp04PqWp_bgeMZKJLuP8CBu6UncS1WRR0Aa6PeETFGIRkprwv0_Q6780y7Q1QEyQRJM630hGZC7Kdmwy_uZT8ePPloUdcTyRWmmxrwA6GdR",
+          "imageAlt": "Close up of a gourmet fried chicken and fish combo platter"
+        }
+      ]
+    }
+  ],
+  "topSellers": ["classic-burger", "spicy-fish-fry", "agnis-signature-fish", "peri-peri-fries"]
+}

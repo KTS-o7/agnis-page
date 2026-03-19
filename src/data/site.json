@@ -1,0 +1,16 @@
+{
+  "name": "Agni's",
+  "tagline": "Fish Chicken Fries",
+  "description": "Fresh. Fiery. Made to Order. Burgers, Seafood & Fries — Kudla Style.",
+  "address": "Near Besant College, MG Road, Mangaluru, Karnataka 575003",
+  "phone": "+91 98765 43210",
+  "hours": "Monday — Sunday, 12:30 PM – 10:30 PM",
+  "zomato": "https://www.zomato.com/mangalore/agnis-fish-chicken-fries-kodailbail",
+  "swiggy": "https://www.swiggy.com/city/mangaluru/agnis-fish-chicken-fries-vasantha-chambers-kodailbail-rest880931",
+  "maps": "https://maps.app.goo.gl/YzSaggUEFbaUp76F9",
+  "logo": "/images/logo.jpg",
+  "social": {
+    "instagram": "https://www.instagram.com/agnis_kudla/",
+    "facebook": "#"
+  }
+}

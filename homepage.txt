@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Agni’s – Fish Chicken Fries | Fresh. Fiery. Made to Order.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Be+Vietnam+Pro:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-container": "#480d00",
+              "surface-container-high": "#20201f",
+              "inverse-surface": "#fcf9f8",
+              "error": "#ff716c",
+              "on-tertiary-fixed-variant": "#7a000b",
+              "inverse-primary": "#b22e00",
+              "error-container": "#9f0519",
+              "inverse-on-surface": "#565555",
+              "error-dim": "#d7383b",
+              "secondary-fixed": "#ffc96f",
+              "surface-bright": "#2c2c2c",
+              "secondary-fixed-dim": "#ffb623",
+              "surface-container": "#1a1a1a",
+              "on-primary": "#5c1300",
+              "primary-fixed-dim": "#ff5d2e",
+              "on-secondary-fixed-variant": "#6c4a00",
+              "primary": "#ff8f70",
+              "on-secondary": "#523700",
+              "surface-container-low": "#131313",
+              "on-secondary-fixed": "#483000",
+              "surface-container-lowest": "#000000",
+              "tertiary-fixed": "#ff9289",
+              "secondary-dim": "#eda600",
+              "on-tertiary-container": "#1f0001",
+              "on-error-container": "#ffa8a3",
+              "on-surface": "#ffffff",
+              "on-tertiary": "#4a0004",
+              "surface-container-highest": "#262626",
+              "on-tertiary-fixed": "#3a0002",
+              "tertiary-fixed-dim": "#ff7b71",
+              "primary-container": "#ff7852",
+              "surface-dim": "#0e0e0e",
+              "secondary-container": "#7e5700",
+              "tertiary": "#ff7168",
+              "on-surface-variant": "#adaaaa",
+              "on-background": "#ffffff",
+              "background": "#0e0e0e",
+              "outline": "#767575",
+              "on-primary-fixed-variant": "#581200",
+              "tertiary-dim": "#ff7168",
+              "surface-variant": "#262626",
+              "on-secondary-container": "#fff6ee",
+              "surface": "#0e0e0e",
+              "on-primary-fixed": "#000000",
+              "secondary": "#feb300",
+              "primary-fixed": "#ff7852",
+              "primary-dim": "#ff734c",
+              "tertiary-container": "#fe4e49",
+              "on-error": "#490006",
+              "outline-variant": "#484847",
+              "surface-tint": "#ff8f70"
+            },
+            fontFamily: {
+              "headline": ["Epilogue"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #ff8f70 0%, #ff7852 100%);
+        }
+        .glass-panel {
+            background: rgba(26, 26, 26, 0.7);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-6 py-4 z-50 bg-[#0e0e0e]/70 backdrop-blur-xl">
+<div class="text-2xl font-black text-[#ff8f70] uppercase tracking-tighter font-['Epilogue']">Agni’s</div>
+<nav class="hidden md:flex items-center space-x-8 font-['Epilogue'] font-black tracking-tight text-white">
+<a class="text-[#feb300] font-bold border-b-2 border-[#feb300] pb-1" href="#">Home</a>
+<a class="text-[#adaaaa] hover:text-white transition-colors hover:text-[#feb300] transition-all duration-300" href="#">Menu</a>
+<a class="text-[#adaaaa] hover:text-white transition-colors hover:text-[#feb300] transition-all duration-300" href="#">Location</a>
+<a class="text-[#adaaaa] hover:text-white transition-colors hover:text-[#feb300] transition-all duration-300" href="#">Contact</a>
+</nav>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover brightness-[0.4] scale-105" data-alt="Gourmet spicy burger with melting cheese and golden fries on dark surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzLZWTm2NiUXLRG5_v5kw5jGSJQfVKt1PVJOMN5eiM8BWGMZxLwESwiEJxf5OEja1-6oz8XIdFEvfsRXLNTUzxBcN--I1uGdCR9ml8dLfGpx-5B6UW9n9FkxRM0xMSwglmWg1wYQ3RpRxLCpWP5DA9RXDmy-wGuxSw-_b03vGeQO7u25ZsyUGuWRgoYjPu321rjZpUY7lPL_sDcRBKf2gY6ekha6SKsc6VB9DlMIWC6-JflDmJPTNqJmf75dpH_7Lzgd74OEb1_Qka"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-surface/40"></div>
+</div>
+<div class="relative z-10 container mx-auto px-6">
+<div class="max-w-4xl">
+<h1 class="font-headline text-6xl md:text-8xl font-black tracking-tight leading-[0.9] mb-6">
+                        Fresh. <span class="text-primary italic">Fiery.</span><br/>Made to Order.
+                    </h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant mb-10 max-w-xl">
+                        Burgers • Seafood • Fries — <span class="text-secondary font-bold tracking-widest uppercase">Kudla Style</span>
+</p>
+<div class="flex flex-wrap gap-4">
+<a class="kinetic-gradient text-on-primary-fixed px-8 py-4 rounded-md font-bold text-lg flex items-center gap-2 hover:brightness-110 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                            Order on WhatsApp
+                        </a>
+<a class="bg-surface-container-highest border border-outline-variant/15 text-on-surface px-8 py-4 rounded-md font-bold text-lg hover:bg-surface-container-high transition-all" href="#">
+                            Visit Us
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Top Sellers (Bento Grid Style) -->
+<section class="py-24 px-6 container mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+<div>
+<span class="text-secondary font-bold tracking-[0.2em] uppercase text-sm">Most Wanted</span>
+<h2 class="font-headline text-5xl font-extrabold mt-2">Top Sellers</h2>
+</div>
+<p class="text-on-surface-variant max-w-xs border-l-2 border-primary pl-4">The heat that defines Mangalore street flavors. Hand-picked favorites.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Item 1 -->
+<div class="group relative bg-surface-container-highest rounded-xl overflow-hidden p-6 transition-all hover:-translate-y-2">
+<div class="absolute top-4 right-4 z-20 glass-panel px-3 py-1 rounded-full flex items-center gap-1">
+<span class="text-tertiary material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Best Seller</span>
+</div>
+<div class="aspect-square mb-6 overflow-visible">
+<img alt="" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500 drop-shadow-2xl" data-alt="Classic beef burger with lettuce and tomato" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPefwPapRRw1ArSBSPgNen3Q6LVIqsTb48w6w-5-eTiTevXs2fj_Cf6ghNqQBDF22C6OLiIHwYDifEq9HN7pYuKmvt2HL9OXu9PBVFlUsPSsNlP68UcPZC5a_6Se7HP1Ot_yLV5CdJAogB9Ncb0Y-4TFx7s7j0hL-_Jt8BkvA66U1TDO5bRd_eTy6WwJp6mglxo6h8fv8HRJ6lHWHyYGUKExK8UGjFZY1pHBiAHT8LqaF3qPRZAm1oflRYHA64C_ojWiKt_hkiAtVE"/>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-2">Classic Burger</h3>
+<p class="text-on-surface-variant text-sm mb-6">Juicy hand-pressed patty, secret house sauce, and charred buns.</p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold text-xl">₹189</span>
+<button class="bg-surface-container rounded-lg p-2 hover:text-secondary transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group relative bg-surface-container-highest rounded-xl overflow-hidden p-6 transition-all hover:-translate-y-2">
+<div class="absolute top-4 right-4 z-20 glass-panel px-3 py-1 rounded-full flex items-center gap-1">
+<span class="text-tertiary material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Best Seller</span>
+</div>
+<div class="aspect-square mb-6 overflow-visible">
+<img alt="" class="w-full h-full object-cover rounded-lg group-hover:scale-110 transition-transform duration-500 drop-shadow-2xl" data-alt="Spicy coastal fried fish fillet with local spices" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbimrnupdB8HWhFgBho7qFL03qv5oZ42iTtbILdBcngCENS7uw3whYr2MKrPsuoErz9Iihj_9StLNBQ-PBjuPI2MC-3DswTDeLECaIfchqlLw8E1vlwrfbKqYEs4RCgAu29yciNplE41RxwMujTW0TZ4pAifm5I3nqNzcdeF1zFIVXT6IbgqixWabzYm5QJzRZ2p7MqnmLfnPZv6cpn09UfJBAk97b7ueZXTlQ5GCcRfYBgKY6MfVp2D6rgnhpdDzVe8FzHMbaGNCn"/>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-2">Spicy Fish Fry</h3>
+<p class="text-on-surface-variant text-sm mb-6">Fresh catch marinated in Agni's special coastal masala blend.</p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold text-xl">₹249</span>
+<button class="bg-surface-container rounded-lg p-2 hover:text-secondary transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="group relative bg-surface-container-highest rounded-xl overflow-hidden p-6 transition-all hover:-translate-y-2">
+<div class="aspect-square mb-6 overflow-visible">
+<img alt="" class="w-full h-full object-cover rounded-lg group-hover:scale-110 transition-transform duration-500 drop-shadow-2xl" data-alt="Golden crispy chicken tenders with dip" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk9BrzvsfgmtZPTR_LWYc30i35UwEMfGHJuu5VtaqaMw_-yo6IgEKRr0R0EHk4v372gmUQY5rfIa3yOxDuqerDj83r-cXO2KBMq_UFg8t_LKa847ktTMqe9APJ-Lip_TEuhcOJoeDfNQM1Ei6tbfak3QnN82HryDtJTmvrztwcabtRI6llm4dBKj-Fnjk-rdVjjx0ITlNsCRsgoo7cGZlL_FitWoo76qbff0tTzcMBXr_8WM59YAkUGIkFNLOru-XPFqtxwo8wp8_j"/>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-2">Chicken Tenders</h3>
+<p class="text-on-surface-variant text-sm mb-6">Double-breaded for extra crunch. Served with hot garlic mayo.</p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold text-xl">₹169</span>
+<button class="bg-surface-container rounded-lg p-2 hover:text-secondary transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="group relative bg-surface-container-highest rounded-xl overflow-hidden p-6 transition-all hover:-translate-y-2">
+<div class="aspect-square mb-6 overflow-visible">
+<img alt="" class="w-full h-full object-cover rounded-lg group-hover:scale-110 transition-transform duration-500 drop-shadow-2xl" data-alt="Fries tossed in red peri peri spice powder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxdcPgqbed7GJ3HgxfpoZF2EMaCOhL9Gt288ZYcyd2rQso-lMph-68VtfkjNzgFkW_Alr0Ugxw9dpOcuxXBOE3EIIkxkLpNQCHiLLewT7I8MwobLEggqADK9PhgbJ1DMXzJfjhZ2XEWlZK-VBvBrWsvOncyYMbqBuu-dncZzYer--6dixvEP7f12VO_x0jPtG2AzJ3wH5qQCwBQhG-qZAA4W6IGzTlZ1HXO09v3qvD9rfZntpSQg0fSSxy8rhnCDDrevLmcQozxx04"/>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-2">Peri Peri Fries</h3>
+<p class="text-on-surface-variant text-sm mb-6">Hand-cut potato fries dusted with African Bird's Eye chili.</p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold text-xl">₹129</span>
+<button class="bg-surface-container rounded-lg p-2 hover:text-secondary transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Brand Story Section -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="absolute -top-10 -left-10 w-64 h-64 bg-primary/10 rounded-full blur-[100px]"></div>
+<img alt="" class="rounded-2xl relative z-10 w-full h-[600px] object-cover" data-alt="Chef preparing food on a hot grill with flames" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnif8QvQbM9AJuIqGejw7gGjRl4MHYftTqO4QPKlWXmGH3Rp5ygGJD37n0Q3_sUJ5YEI3McR9zR1U_F-YVb6DCKzMHoPgVouV9W_S6LwFwZtIvysZE7_-UQGVJ12Dn73CyCvE6nwMvgQ4iU9Y3uNiGvVArE_XvPtmuC_ZrRc2KmbARMz9Hw_I3zmg40FotKTga_pr8QZTFmxORIxuLKPTFBBMYqlKAZilP99ZIgUmbMjKBQdAWGhFI7VmHeQEtG174hnsoTrTma3Ye"/>
+<div class="absolute -bottom-6 -right-6 glass-panel p-8 rounded-xl z-20 border border-outline-variant/15 max-w-xs">
+<p class="font-headline text-primary text-4xl font-black italic">No Shortcuts.</p>
+<p class="text-sm text-on-surface-variant mt-2">Every single order is cooked from scratch when you press order. Real heat takes time.</p>
+</div>
+</div>
+<div>
+<span class="text-secondary font-bold tracking-[0.2em] uppercase text-sm">The Story</span>
+<h2 class="font-headline text-5xl font-extrabold mt-2 mb-8 leading-tight">A One-Man Show. <br/><span class="text-primary">Endless Passion.</span></h2>
+<div class="space-y-6 text-on-surface-variant text-lg">
+<p>Born from a kitchen in the heart of Kudla, Agni’s is the result of a singular obsession: perfection through fire. We aren't a massive chain; we're a dedicated street kitchen focusing on what matters most—quality ingredients and explosive flavor.</p>
+<p>From our hand-picked coastal spices to our custom-blend burger patties, everything is handled by a single pair of hands. This ensures that every bite you take is exactly how it was meant to be: Fresh. Fiery. Authentic.</p>
+</div>
+<div class="mt-12 flex items-center gap-6">
+<div class="flex flex-col">
+<span class="text-3xl font-black text-white font-headline">100%</span>
+<span class="text-xs uppercase tracking-widest font-bold text-secondary">Fresh Ingredients</span>
+</div>
+<div class="w-[1px] h-12 bg-outline-variant/30"></div>
+<div class="flex flex-col">
+<span class="text-3xl font-black text-white font-headline">0</span>
+<span class="text-xs uppercase tracking-widest font-bold text-secondary">Frozen Patties</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof (Editorial Layout) -->
+<section class="py-24 px-6 container mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-5xl font-extrabold">The Street Says It All</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="space-y-4">
+<img alt="" class="w-full h-64 object-cover rounded-xl" data-alt="Close up of a juicy burger with sauce dripping" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY29CSNC9yADX2xuT0mpk-vDjZtYVje4iQACubyqgH70_Ji8Wky_R02XCchvDCxP2p3BPbZQc6MJZi5cliiWyU_fAALrkurcHSASpZ6dKn_Njl9pL6517L4jZZsB6Rqpg2yL0CHi9Zh1eVKUyw4KaXr3JqgWe7iqi7ekURFH9FCYA0n_OY4rnR7ENgJCe9BPORFlpREC1qwTuecXbo5tahOE1s9vycs-zhslUsVtZ3lXFFfrnJpl7y_oQpkMV1Ss14xk1mma_qhTDU"/>
+<div class="bg-surface-container-highest p-6 rounded-xl italic text-on-surface-variant">
+                        "Juicy burgers that actually have flavor. Best in Mangalore hands down."
+                        <p class="not-italic font-bold text-primary mt-4 text-sm">— Rahul K.</p>
+</div>
+</div>
+<div class="space-y-4 pt-12">
+<div class="bg-surface-container-highest p-6 rounded-xl italic text-on-surface-variant">
+                        "The fish fry takes me back to the coast instantly. Authentic spice level!"
+                        <p class="not-italic font-bold text-primary mt-4 text-sm">— Priya S.</p>
+</div>
+<img alt="" class="w-full h-80 object-cover rounded-xl" data-alt="Golden fried chicken pieces on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkVz7tifpoQamI52eyaaiApT3_8h1ufTv_q6aftXRb1O3FRvDjBbm9-6vCwGXWIiI7nYQIAxI7SlD3ZrkS9-iHa7cGQJ6PprpqAK1a2yb3lxf0ZtXfZryZLvMh4EFMuVW0k8pgAcwmCIw6h3ilYbZ7mT7l0GkRBLrKY2PyxO-ZUlxg7YeW_dtuecmT98Nv4gf5wuuyO8cOHcyjgbfmJVQQgtSEokSWQWfdHheCaZ9fgZ6xacLonKMMYtxGiA1PsLAsbmjmzyZlBYuN"/>
+</div>
+<div class="space-y-4">
+<img alt="" class="w-full h-80 object-cover rounded-xl" data-alt="Seasoned fries in a basket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwLqTUuzN_DLnzuXOcWCZwKupST26M0L9evh3l3vH0FFUYPOp54pNguVwDuDm6LuseqP2I-aymAXT4BDcm6fF68VJTizrnJMQyePE27XcK3PVYMAcjntD4hah5Xfwzcyw2MCwJs6tvhyXL03i-ASpZmUWm8GjdELciJ8NX-lclLF3-HrgnFf8RI_OaTb7-s8xNlyAlohOkRWgEy2EIrioOw5FARZ2yu4npWOaCSB5qXTUPsP4LR5qdXCG7844kL_3EYeZB0jD-pyoC"/>
+<div class="bg-surface-container-highest p-6 rounded-xl italic text-on-surface-variant">
+                        "Fresh and flavorful. You can taste the quality in the ingredients."
+                        <p class="not-italic font-bold text-primary mt-4 text-sm">— Akhil M.</p>
+</div>
+</div>
+<div class="space-y-4 pt-12">
+<div class="bg-surface-container-highest p-6 rounded-xl italic text-on-surface-variant">
+                        "Finally, a place that doesn't hold back on the spice!"
+                        <p class="not-italic font-bold text-primary mt-4 text-sm">— Shreya R.</p>
+</div>
+<img alt="" class="w-full h-64 object-cover rounded-xl" data-alt="Plate of seafood and fries" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNji_VUaUiitPkvqNBB6v0xQjEgc3C-32sG0hpstsXSV5NWkcfafSyrIPVpQtE0cvvttZQLfB8FXnQq30Tmq68BERJxf-bDGpaqooaRIOZDjH_Lg1OW_p8ETbNaLbxfrhJhQeIBgBFUdf80okQs0MQaQ5wD_jQxirs7iZ4BDf1o7FUKHptD45JkUE-xo2i6D54hJKo8GTuSbJTsUcxtgOTZIrXRObqvxN1iIhNqLH1_3BI_ALzsrlBfIQnrFfc12bQUjTgkM5_HeZF"/>
+</div>
+</div>
+</section>
+<!-- Location & Map -->
+<section class="py-24 bg-surface-container">
+<div class="container mx-auto px-6">
+<div class="bg-surface-container-highest rounded-3xl overflow-hidden grid grid-cols-1 lg:grid-cols-5 border border-outline-variant/15">
+<div class="lg:col-span-2 p-12 flex flex-col justify-center">
+<span class="text-secondary font-bold tracking-[0.2em] uppercase text-sm">Find Us</span>
+<h2 class="font-headline text-4xl font-extrabold mt-2 mb-8">Fuel the Fire</h2>
+<div class="space-y-8">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div>
+<h4 class="font-bold text-white mb-1">Address</h4>
+<p class="text-on-surface-variant text-sm">Near Besant College, MG Road,<br/>Mangaluru, Karnataka 575003</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<div>
+<h4 class="font-bold text-white mb-1">Hours</h4>
+<p class="text-on-surface-variant text-sm">Monday — Sunday<br/>12:30 PM - 10:30 PM</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">call</span>
+<div>
+<h4 class="font-bold text-white mb-1">Contact</h4>
+<p class="text-on-surface-variant text-sm">+91 98765 43210</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-3 min-h-[400px] relative">
+<img alt="" class="w-full h-full object-cover grayscale brightness-50 contrast-125" data-alt="Map view of Mangaluru city area" data-location="Mangaluru" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPU0WnEqc8GQsPIkXzKwxe7lOtMV1sfDl7JeL9_lMvJysFyGfMh-3SY-yOPo6RRUF-gWKfysKwLRKwrAq2jI3K02NsQYm--DsSK_5gE7PiWiLShH05P7bIe6Mcn4tofzCHCGPWtN8U9_AhLPWjHlMHLokg1Kr0tN_ymHfDoJBrx-B_h6qPKpDS8SSgc8CNNwmD3pmT8vDSlHxG0UpE9mHnUWAIRKSxrvB4N4vVRnY2mEWBCWE3nrnpqsZ-qHBvgxNORPXXPpCXqm7r"/>
+<div class="absolute inset-0 bg-primary/10 pointer-events-none"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-primary p-4 rounded-full animate-bounce shadow-[0_0_30px_rgba(255,143,112,0.5)]">
+<span class="material-symbols-outlined text-on-primary-fixed" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full flex flex-col items-center text-center space-y-8 bg-[#0e0e0e] full-width py-12 px-6 border-t border-[#484847]/15">
+<div class="text-xl font-black text-[#ff8f70] mb-4 uppercase font-['Epilogue'] tracking-tighter">Agni’s</div>
+<nav class="flex flex-wrap justify-center gap-8 mb-8 font-['Be_Vietnam_Pro'] text-sm text-[#adaaaa]">
+<a class="hover:text-[#ff8f70] transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-[#ff8f70] transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-[#ff8f70] transition-colors" href="#">Location</a>
+<a class="hover:text-[#ff8f70] transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex gap-6 mb-8">
+<a class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-primary transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined">social_leaderboard</span>
+</a>
+<a class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-primary transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+</div>
+<p class="font-['Be_Vietnam_Pro'] text-sm text-[#adaaaa]">© 2024 Agni’s Fish Chicken Fries. Embers of the Coast.</p>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-[#1a1a1a]/80 backdrop-blur-2xl rounded-t-2xl shadow-[0_-4px_20px_rgba(255,115,76,0.05)]">
+<a class="flex flex-col items-center justify-center text-[#adaaaa] px-4 py-2 hover:text-[#ff8f70] transition-colors tap-highlight-none active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+<span class="font-['Be_Vietnam_Pro'] text-[10px] font-bold uppercase tracking-widest mt-1">WhatsApp</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#adaaaa] px-4 py-2 hover:text-[#ff8f70] transition-colors tap-highlight-none active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+<span class="font-['Be_Vietnam_Pro'] text-[10px] font-bold uppercase tracking-widest mt-1">Call</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#feb300] text-black rounded-xl px-6 py-2 scale-110 tap-highlight-none active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_cart" style="font-variation-settings: 'FILL' 1;">shopping_cart</span>
+<span class="font-['Be_Vietnam_Pro'] text-[10px] font-bold uppercase tracking-widest mt-1">Order</span>
+</a>
+</nav>
+</body></html>

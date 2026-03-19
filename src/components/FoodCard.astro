@@ -1,0 +1,88 @@
+---
+// src/components/FoodCard.astro
+import SpiceIndicator from './SpiceIndicator.astro';
+
+interface Props {
+  name: string;
+  description: string;
+  price: number;
+  currency: string;
+  spiceLevel: 1 | 2 | 3;
+  tags: string[];
+  image: string;
+  imageAlt: string;
+  layout?: 'grid' | 'list';
+}
+
+const {
+  name,
+  description,
+  price,
+  currency,
+  spiceLevel,
+  tags,
+  image,
+  imageAlt,
+  layout = 'grid',
+} = Astro.props;
+
+const isBestSeller = tags.includes('best-seller');
+const isChefSpecial = tags.includes('chef-special');
+---
+
+{layout === 'grid' ? (
+  <article class="group relative bg-surface-container-highest rounded-xl overflow-hidden p-6 transition-all hover:-translate-y-2">
+    {(isBestSeller || isChefSpecial) && (
+      <div class="absolute top-4 right-4 z-20 glass-panel px-3 py-1 rounded-full flex items-center gap-1">
+        <span class="text-tertiary text-sm" aria-hidden="true">🔥</span>
+        <span class="text-[10px] font-bold uppercase tracking-tighter font-body">
+          {isBestSeller ? 'Best Seller' : "Chef's Special"}
+        </span>
+      </div>
+    )}
+    <div class="aspect-square mb-6 overflow-visible">
+      <img
+        src={image}
+        alt={imageAlt}
+        class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500 drop-shadow-2xl"
+        loading="lazy"
+        decoding="async"
+        width="400"
+        height="400"
+      />
+    </div>
+    <h3 class="font-headline text-2xl font-bold mb-2">{name}</h3>
+    <p class="text-on-surface-variant text-sm mb-4">{description}</p>
+    <SpiceIndicator level={spiceLevel} />
+    <div class="flex items-center justify-between mt-4">
+      <span class="text-primary font-bold text-xl font-body">{currency}{price}</span>
+    </div>
+  </article>
+) : (
+  <article class="group bg-surface-container-highest p-4 rounded-xl flex gap-4 items-center transition-all hover:bg-surface-container-high active:scale-[0.98]">
+    <div class="relative h-24 w-24 flex-shrink-0 rounded-lg overflow-hidden">
+      <img
+        src={image}
+        alt={imageAlt}
+        class="h-full w-full object-cover group-hover:scale-110 transition-transform"
+        loading="lazy"
+        decoding="async"
+        width="96"
+        height="96"
+      />
+      {isBestSeller && (
+        <div class="absolute top-1 left-1 bg-tertiary text-[10px] font-black px-1.5 py-0.5 rounded text-on-tertiary uppercase font-body">🔥 Best</div>
+      )}
+    </div>
+    <div class="flex-1 min-w-0">
+      <div class="flex justify-between items-start">
+        <h3 class="font-bold text-lg leading-tight">{name}</h3>
+        <span class="text-primary font-bold ml-2 whitespace-nowrap font-body">{currency}{price}</span>
+      </div>
+      <p class="text-on-surface-variant text-sm mt-1 line-clamp-2">{description}</p>
+      <div class="mt-2">
+        <SpiceIndicator level={spiceLevel} />
+      </div>
+    </div>
+  </article>
+)}

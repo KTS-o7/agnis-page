@@ -1,0 +1,17 @@
+# Build output
+dist/
+.vercel/output/
+
+# Dependencies
+node_modules/
+
+# Astro generated
+.astro/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
