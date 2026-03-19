@@ -1,0 +1,10 @@
+---
+// src/components/SectionLabel.astro
+interface Props {
+  text: string;
+}
+const { text } = Astro.props;
+---
+<span class="text-secondary font-bold tracking-[0.2em] uppercase text-sm font-body">
+  {text}
+</span>
