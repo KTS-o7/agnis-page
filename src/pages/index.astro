@@ -43,18 +43,20 @@ const topSellers = menuData.topSellers
         </p>
         <div class="flex flex-wrap gap-4">
           <a
-            href={`https://wa.me/${siteData.whatsapp}`}
+            href={siteData.zomato}
             target="_blank"
             rel="noopener noreferrer"
             class="kinetic-gradient text-on-primary-fixed px-8 py-4 rounded-md font-bold text-lg flex items-center gap-2 hover:brightness-110 active:scale-95 transition-all"
           >
-            Order on WhatsApp
+            Order on Zomato
           </a>
           <a
-            href="/#location"
+            href={siteData.swiggy}
+            target="_blank"
+            rel="noopener noreferrer"
             class="bg-surface-container-highest border border-outline-variant/15 text-on-surface px-8 py-4 rounded-md font-bold text-lg hover:bg-surface-container-high transition-all"
           >
-            Find Us
+            Order on Swiggy
           </a>
         </div>
       </div>
@@ -189,6 +191,7 @@ const topSellers = menuData.topSellers
               <div>
                 <h4 class="font-bold text-on-surface mb-1 font-body">Address</h4>
                 <p class="text-on-surface-variant text-sm font-body">{siteData.address}</p>
+                <a href={siteData.maps} target="_blank" rel="noopener noreferrer" class="text-secondary text-xs font-bold uppercase tracking-widest mt-2 inline-block hover:text-primary transition-colors">Get Directions →</a>
               </div>
             </div>
             <div class="flex gap-4">
@@ -205,24 +208,24 @@ const topSellers = menuData.topSellers
             </div>
           </address>
         </div>
-        <div class="lg:col-span-3 min-h-[400px] relative">
+        <a href={siteData.maps} target="_blank" rel="noopener noreferrer" class="lg:col-span-3 min-h-[400px] relative block">
           <img
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPU0WnEqc8GQsPIkXzKwxe7lOtMV1sfDl7JeL9_lMvJysFyGfMh-3SY-yOPo6RRUF-gWKfysKwLRKwrAq2jI3K02NsQYm--DsSK_5gE7PiWiLShH05P7bIe6Mcn4tofzCHCGPWtN8U9_AhLPWjHlMHLokg1Kr0tN_ymHfDoJBrx-B_h6qPKpDS8SSgc8CNNwmD3pmT8vDSlHxG0UpE9mHnUWAIRKSxrvB4N4vVRnY2mEWBCWE3nrnpqsZ-qHBvgxNORPXXPpCXqm7r"
-            alt="Map view of Mangaluru showing Agni's location"
+            alt="Map view of Mangaluru showing Agni's location — click to open in Google Maps"
             class="w-full h-full object-cover grayscale brightness-50 contrast-125"
             loading="lazy"
             width="900"
             height="400"
           />
           <div class="absolute inset-0 bg-primary/10 pointer-events-none" aria-hidden="true"></div>
-          <div class="absolute inset-0 flex items-center justify-center" aria-hidden="true">
+          <div class="absolute inset-0 flex items-center justify-center">
             <div class="bg-primary p-4 rounded-full animate-bounce shadow-[0_0_30px_rgba(255,143,112,0.5)]">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-on-primary-fixed">
-                <path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/>
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
               </svg>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </section>

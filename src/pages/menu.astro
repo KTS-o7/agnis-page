@@ -35,14 +35,22 @@ const featuredCombo = allItems.find(item => item.tags.includes('chef-special'));
             THE COASTAL<br /><span class="text-primary">EMBER FEAST</span>
           </h1>
           <p class="text-on-surface-variant text-lg mb-8 font-body leading-relaxed">{featuredCombo.description}</p>
-          <div class="flex items-center gap-6">
+          <div class="flex flex-wrap items-center gap-4">
             <a
-              href={`https://wa.me/${siteData.whatsapp}?text=I'd like to order: ${encodeURIComponent(featuredCombo.name)}`}
+              href={siteData.zomato}
               target="_blank"
               rel="noopener noreferrer"
               class="bg-primary text-on-primary-fixed font-black px-8 py-4 rounded-md text-lg tracking-tight hover:bg-primary-fixed-dim transition-all shadow-lg shadow-primary/10"
             >
-              ORDER FOR {featuredCombo.currency}{featuredCombo.price}
+              ORDER ON ZOMATO
+            </a>
+            <a
+              href={siteData.swiggy}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-surface-container-highest border border-outline-variant/15 text-on-surface font-black px-8 py-4 rounded-md text-lg tracking-tight hover:bg-surface-container-high transition-all"
+            >
+              ORDER ON SWIGGY
             </a>
           </div>
         </div>
@@ -101,18 +109,17 @@ const featuredCombo = allItems.find(item => item.tags.includes('chef-special'));
     </div>
   </div>
 
-  <!-- Floating WhatsApp CTA -->
+  <!-- Floating Order CTA -->
   <a
-    href={`https://wa.me/${siteData.whatsapp}`}
+    href={siteData.zomato}
     target="_blank"
     rel="noopener noreferrer"
     class="fixed bottom-24 md:bottom-10 right-6 md:right-10 z-[60] flex items-center gap-3 bg-secondary text-on-primary-fixed px-6 py-4 rounded-full shadow-2xl shadow-secondary/20 hover:scale-105 active:scale-95 transition-all"
-    aria-label="Order on WhatsApp"
+    aria-label="Order on Zomato"
   >
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.122 1.526 5.858L0 24l6.266-1.502A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.012-1.374l-.36-.214-3.72.892.926-3.618-.235-.372A9.818 9.818 0 1 1 12 21.818z"/>
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/>
     </svg>
-    <span class="font-bold tracking-tight uppercase text-sm font-body hidden md:inline">Order on WhatsApp</span>
+    <span class="font-bold tracking-tight uppercase text-sm font-body hidden md:inline">Order on Zomato</span>
   </a>
 </BaseLayout>
